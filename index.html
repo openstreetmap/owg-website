@@ -1,13 +1,15 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: owg-log
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <p>We're the Operations Working Group for the OpenStreetMap Foundation. These are our monthly reports to the
+  OSMF management team.</p>
+  <h1>Monthly Reports</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>

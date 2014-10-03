@@ -12,8 +12,12 @@ On the advice of the vendor's hardware support, Pummelzacken was re-installed. T
 
 The failed drive was replaced and the RAID array re-built. The delayed carto style update was pushed 2014-09-06.
 
+# New hardware
+
+We got 4 new HP DL360 G6s, which are racked but not yet powered at UCL, waiting on sorting out provision of extra power there. The new machines will likely replace older G4ps and G5s which can then be retired.
+
 # Meeting
 
-We had a conference call meeting on 29th October. Minutes are yet to be published.
+We had a conference call meeting on 29th October. A [summary](http://www.osmfoundation.org/wiki/File:OWG_Summary_2014-09-29.pdf) is available.
 
 The call was held over WebRTC using talky.io, with mixed results. Video had to be disabled to preserve bandwidth, and particular audio connections would fail leaving some people only hearing one half of a conversation, forcing a reconnect. We continue to seek alternatives while awaiting progress on [http://iswebrtcreadyyet.com/](http://iswebrtcreadyyet.com/)

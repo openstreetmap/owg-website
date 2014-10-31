@@ -24,6 +24,6 @@ We got 4 new HP DL360 G6s, which are racked but not yet powered at UCL, waiting 
 
 # Meeting
 
-We had a conference call meeting on 29th October. A [summary](http://www.osmfoundation.org/wiki/File:OWG_Summary_2014-09-29.pdf) is available.
+We had a conference call meeting on 29th September. A [summary](http://www.osmfoundation.org/wiki/File:OWG_Summary_2014-09-29.pdf) is available.
 
 The call was held over WebRTC using talky.io, with mixed results. Video had to be disabled to preserve bandwidth, and particular audio connections would fail leaving some people only hearing one half of a conversation, forcing a reconnect. We continue to seek alternatives while awaiting progress on [http://iswebrtcreadyyet.com/](http://iswebrtcreadyyet.com/)

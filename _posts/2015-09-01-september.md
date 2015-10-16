@@ -21,9 +21,9 @@ There has been a failed disk on [Fume] which was causing a lot of alerts. The [R
 OWG ordered two new aerial imagery machines with the following spec:
 
 * System: HP DL180 G6 2U server - Dual PSU - 750w common slot
-* CPU: 2x Quadcore Intel Xeon X5630 @ 2.13GHz
-* Memory: 128GB (16x 8GB)
+* CPU: 2x Quadcore Intel Xeon L5630 @ 2.13GHz
+* Memory: 64GB (8x 8GB)
 * Disk: 12x 2TB 3.5" SAS (RAID6, HP 7.2K SAS)
-* Controller: HP Smart Array P410i Controller 512MB Flash-backed write cache
+* Controller: HP Smart Array P410i Controller 512MB Flash-backed write cache (FBWC)
 
 This is a slight departure from the budget, which only called for one new machine. However, getting two machines allows us to have some degree of redundancy. The old HP kit is pretty reliable and has good out-of-band management, so we're not anticipating any issues due to the age of the hardware.

@@ -27,3 +27,7 @@ OWG ordered two new aerial imagery machines with the following spec:
 * Controller: HP Smart Array P410i Controller 512MB Flash-backed write cache (FBWC)
 
 This is a slight departure from the budget, which only called for one new machine. However, getting two machines allows us to have some degree of redundancy. The old HP kit is pretty reliable and has good out-of-band management, so we're not anticipating any issues due to the age of the hardware.
+
+# Fix cleanup of empty tile directories
+
+The tile cleanup script [was fixed](https://github.com/openstreetmap/chef/commit/a0858c90b268bfa28bc362d687f89e43b48830e3) and [now hits its cleanup target](https://github.com/openstreetmap/operations/issues/48#issuecomment-155908430) most of the time.

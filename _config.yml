@@ -1,4 +1,4 @@
 name: owg-log
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 baseurl: /owg-log

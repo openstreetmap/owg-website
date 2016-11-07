@@ -29,3 +29,7 @@ A new tile cache in Denmark, called [odin](https://hardware.openstreetmap.org/se
 When the planet file server, called [ironbelly](https://hardware.openstreetmap.org/servers/ironbelly.openstreetmap.org/), crashes (as all computers occasionally do) it can sometimes leave zero-size replication files on disk. These replication files are useless and, if the wrong file is corrupted, can even prevent replication from continuing when the server reboots.
 
 [Several](https://github.com/openstreetmap/chef/commit/bd63b8da0009075761535690e4fd9a270906b1f5) [attempts](https://github.com/openstreetmap/chef/commit/7f2b30d33c5898d31f9b6623657d93d272b8ea7a) were made to fix this by various invocations of `fsync` system calls. Getting data committed and durable on disk is [known to be tricky](http://www.slideshare.net/nan1nan1/eat-my-data).
+
+# Upgrade high zoom array on render server
+
+The "high zoom" array, containing tiles at zooms 17 and up, was replaced in one of the rendering servers, [orm](https://hardware.openstreetmap.org/servers/orm.openstreetmap.org/). This will reduce the latency of fetching a tile from disk, and also replaces a failing disk. [Issue](https://github.com/openstreetmap/operations/issues/88).

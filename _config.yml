@@ -1,4 +1,4 @@
 name: owg-log
 markdown: kramdown
-pygments: true
+highlighter: rouge
 baseurl: /owg-log

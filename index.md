@@ -1,15 +1,18 @@
 ---
 layout: default
-title: owg-log
+title: OSMF Operations Working Group
 ---
 
-<div id="home">
-  <p>We're the Operations Working Group for the OpenStreetMap Foundation. These are our monthly reports to the
-  OSMF board.</p>
-  <h1>Monthly Reports</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+# OSMF Operations Working Group
+
+We're the Operations Working Group for the OpenStreetMap Foundation.
+
+# Latest Reports
+
+<ul class="posts">
+  {% for post in site.posts limit: 6 %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+For a full list of reports, please see our [Reports Archive]({{ site.baseurl }}/reports/).

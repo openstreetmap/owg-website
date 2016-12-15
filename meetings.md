@@ -7,6 +7,10 @@ permalink: /meetings/
 
 Most of the OWG activities are carried out via email and our public issues tracker, but we sometimes hold meetings too.
 
+* [2016-10-20 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-10-20.pdf)
+* [2016-08-01 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-08-01.pdf)
+* [2015-07-13 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2015-07-13.pdf)
+* [2015-02-02 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2015-02-02.pdf)
 * [2014-09-29 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2014-09-29.pdf)
 * [2014-01-15 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2014-01-15.pdf)
 * [2013-08-30 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2013-08-30.pdf)

@@ -5,7 +5,7 @@ permalink: /meetings/
 
 # {{ page.title }}
 
-Most of the OWG activities are carried out via email and our public issues tracker, but we sometimes hold meetings too.
+Most of the OWG activities are carried out via email and our [public issues tracker](https://github.com/openstreetmap/operations), but we sometimes hold meetings too.
 
 * [2016-10-20 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-10-20.pdf)
 * [2016-08-01 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-08-01.pdf)

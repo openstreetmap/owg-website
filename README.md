@@ -29,6 +29,6 @@ bundle install
 and then run
 
 ```
-bundle exec jekyll serve -w --baseurl ''
+bundle exec jekyll serve -w
 ```
 The site is then available at http://localhost:4000/ and will update automatically when you change any files.

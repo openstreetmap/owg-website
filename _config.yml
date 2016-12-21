@@ -1,7 +1,7 @@
 name: owg-log
 markdown: kramdown
 highlighter: rouge
-baseurl: /owg-log
+baseurl:
 defaults:
   -
     scope:

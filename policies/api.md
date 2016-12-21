@@ -3,6 +3,8 @@ title: API Usage policy
 permalink: /policies/api/
 ---
 
+# {{ page.title }}
+
 *This forms part of a set of usage policies governing core OpenStreetMap services. Note that 'API' relates to the data editing API. For developers accessing maps (often using javascript "APIs") the OpenStreetMap Tile Usage Policy is more relevant*
 
 ------

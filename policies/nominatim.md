@@ -3,6 +3,8 @@ title: Nominatim Usage Policy
 permalink: /policies/nominatim/
 ---
 
+# {{ page.title }}
+
 *This is an Acceptable Use Policy for the server running at nominatim.openstreetmap.org and does not apply to nominatim services run by yourself or other organisations*
 
 ------

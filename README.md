@@ -1,20 +1,20 @@
-# owg-log
+# owg-website
 
-This repository holds the logs for the operations working group. We're using a git repo since that's what we're used to. It also allows other people to make pull requests if they want to, sidesteps permissions issues on wikis, and generally just lowers the bar to contribution.
+This repository holds the website for the OSMF Operations Working Group. We're using a git repo since that's what we're used to. It also allows other people to make pull requests if they want to, sidesteps permissions issues on wikis, and generally just lowers the bar to contribution.
 
-If you just want to read the reports, see [https://gravitystorm.github.io/owg-log/](https://gravitystorm.github.io/owg-log/)
+The website contains our monthly reports to the OSMF Board, our policies, and our meeting notes. You can view the website at [operations.osmfoundation.org](https://operations.osmfoundation.org)
 
-## Contributing to reports
+## Contributing to the website
 
-The reports are organised per calendar month, and are found in the [_posts](_posts) directory.
+We welcome contributions to our website! Your suggestions will be reviewed by the team and merged where appropriate.
 
 ### Via github.com
 
-When you're viewing a report, just click on the "Edit" button on the github.com UI, and submit a pull request.
+When you're viewing a page, just click on the "Edit" button on the github.com UI, and submit a pull request.
 
 ### Via prose.io
 
-You can also edit the reports using prose.io, if you'd prefer a wysiwyg editor
+You can also edit the reports using [prose.io](http://prose.io/), if you'd prefer a wysiwyg editor
 
 ### Via git
 
@@ -29,6 +29,6 @@ bundle install
 and then run
 
 ```
-jekyll serve -w --baseurl ''
+bundle exec jekyll serve -w --baseurl ''
 ```
 The site is then available at http://localhost:4000/ and will update automatically when you change any files.

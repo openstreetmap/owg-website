@@ -1,5 +1,5 @@
 ---
-title: Tile Usage Policy
+title: Tile Usage and Image Export Policy
 permalink: /policies/tiles/
 ---
 
@@ -20,7 +20,7 @@ But because OpenStreetMap data is free, many other organisations provide map til
 * Heavy use (e.g. distributing an app that uses tiles from openstreetmap.org) is **forbidden** without prior permission from the [System Administrators](https://wiki.openstreetmap.org/wiki/System_Administrators). See below for alternatives.
 * Clearly display [license](https://wiki.openstreetmap.org/wiki/License) attribution.
 * Do not actively or passively encourage copyright infringement.
-* Calls to **/cgi-bin/export** may only be triggered by direct end-user action. (For example: "click here to export".) The export call is an expensive (CPU+RAM) function to run and will frequently reject when server is under high load.
+* **Image exports** may only be triggered by direct end-user action. (For example: "click here to export".) The export call is an expensive (CPU+RAM) function to run and will frequently reject when server is under high load.
 * Highly Recommended: Do not hardcode any URL at tile.openstreetmap.org into an app.
 * Recommended: add a link to [https://www.openstreetmap.org/fixthemap](https://www.openstreetmap.org/fixthemap) to allow your users to report and fix problems in our data.
 

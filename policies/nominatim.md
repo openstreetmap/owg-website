@@ -52,10 +52,6 @@ Please be aware that this usage policy may change without notice. In particular,
 
 ## Alternatives / Third-party providers
 
-For slightly larger requirements you may be able to use one the various third-party providers, though of course you will need to agree to their terms of service.
-
-* [MapQuest Open](http://developer.mapquest.com/web/products/open/nominatim)
-* [OpenCage Geocoder](http://geocoder.opencagedata.com/)
-* [MapZen Search (pelias geocoder)](https://mapzen.com/projects/search/)
+For slightly larger requirements you may be able to use commercial third-party providers. Some are listed on the [Nominatim wiki page](https://wiki.openstreetmap.org/wiki/Nominatim#Alternatives_.2F_Third-party_providers).
 
 If your requirements are even larger you can [install your own instance](https://wiki.openstreetmap.org/wiki/Nominatim/Installation) of Nominatim.

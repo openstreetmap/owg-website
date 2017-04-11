@@ -21,7 +21,6 @@ But because OpenStreetMap data is free, many other organisations provide map til
 * Clearly display [license](https://wiki.openstreetmap.org/wiki/License) attribution.
 * Do not actively or passively encourage copyright infringement.
 * Calls to **/cgi-bin/export** may only be triggered by direct end-user action. (For example: "click here to export".) The export call is an expensive (CPU+RAM) function to run and will frequently reject when server is under high load.
-* Highly Recommended: Do not hardcode any URL at tile.openstreetmap.org into an app.
 * Recommended: add a link to [https://www.openstreetmap.org/fixthemap](https://www.openstreetmap.org/fixthemap) to allow your users to report and fix problems in our data.
 
 ## Technical Usage Requirements

@@ -5,7 +5,7 @@ permalink: /policies/tiles/
 
 # {{ page.title }}
 
-**OpenStreetMap tiles are freely available for use as long as certain requirements are met by external users and enough resources are available from OpenStreetMap's own servers.** We are in principle happy for our map tiles to be used by external users for creative and unexpected uses – in contrast to most web mapping providers, which insist that you use only their supplied API.
+**OpenStreetMap tiles are freely available for use as long as the requirements on this page are met by external users and enough resources are available from OpenStreetMap's own servers.** We are in principle happy for our map tiles to be used by external users for creative and unexpected uses – in contrast to most web mapping providers, which insist that you use only their supplied API.
 
 **OpenStreetMap data is [free for everyone to use](https://wiki.openstreetmap.org/wiki/OpenStreetMap_License). Our tile servers are not. OpenStreetMap's own servers are run entirely on donated resources.** They have strictly limited capacity. Heavy use of OSM tiles adversely affects people's ability to edit the map, and is an abuse of the individual donations and sponsorship which provide hardware and bandwidth. As a result, we require that users of the tiles abide by this tile usage policy.
 
@@ -19,7 +19,7 @@ But because OpenStreetMap data is free, many other organisations provide map til
 * Clearly display [license](https://wiki.openstreetmap.org/wiki/License) attribution.
 * Do not actively or passively encourage copyright infringement.
 * Calls to **/cgi-bin/export** may only be triggered by direct end-user action. (For example: "click here to export".) The export call is an expensive (CPU+RAM) function to run and will frequently reject when server is under high load.
-* Recommended: To prevent needing to create new version of an app in case it gets blocked due to imposing an excessive load, do not hardcode any URL at tile.openstreetmap.org into an app.
+* Recommended: Do not hardcode any URL at tile.openstreetmap.org as doing so will limit your ability to react quickly if the service is disrupted or blocked.
 * Recommended: add a link to [https://www.openstreetmap.org/fixthemap](https://www.openstreetmap.org/fixthemap) to allow your users to report and fix problems in our data.
 
 ## Technical Usage Requirements

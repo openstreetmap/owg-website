@@ -40,6 +40,7 @@ Who we are:
 * Matt Amos
 * Andy Allan
 * Emilie Laffray
+* Brian DeRocher
 
 The OSM Operations Team are on Twitter: [@OSM_Tech](https://twitter.com/osm_tech)
 

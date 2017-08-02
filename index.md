@@ -40,7 +40,6 @@ Who we are:
 * Matt Amos
 * Andy Allan
 * Emilie Laffray
-* Sarah Hoffmann
 
 The OSM Operations Team are on Twitter: [@OSM_Tech](https://twitter.com/osm_tech)
 

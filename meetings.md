@@ -7,6 +7,7 @@ permalink: /meetings/
 
 Most of the OWG activities are carried out via email and our [public issues tracker](https://github.com/openstreetmap/operations), but we sometimes hold meetings too.
 
+* [2017-12-11 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2017-12-11.pdf)
 * [2016-10-20 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-10-20.pdf)
 * [2016-08-01 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-08-01.pdf)
 * [2015-07-13 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2015-07-13.pdf)

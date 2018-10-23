@@ -17,6 +17,9 @@ To avoid having your access blocked, please discuss your requirement with [syste
 
 The OSMF Operations Working Group (OWG) are the team in charge of API Usage policies for OSMF-run services.
 
+Use of any OSMF provided service is further governed by the [OSMF Terms of Use
+](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
+
 ## Requirements
 
 * Clearly display [licence](https://wiki.openstreetmap.org/wiki/Licence) attribution as required.

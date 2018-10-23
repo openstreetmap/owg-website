@@ -11,6 +11,9 @@ permalink: /policies/nominatim/
 
 OSM's [Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim) service is mainly there to power the search bar on [openstreetmap.org](https://openstreetmap.org/). We are in principle happy for the public API to be used by external users for creative and unexpected uses. However, be aware that the service runs on donated servers and has a very limited capacity. We therefore ask you to limit your use and adhere to this usage policy.
 
+Use of any OSMF provided service is further governed by the [OSMF Terms of Use
+](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
+
 ## Requirements
 
 * No heavy uses (an absolute **maximum of 1 request per second**).

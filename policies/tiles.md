@@ -15,6 +15,9 @@ Below are the minimum requirements that users of tile.openstreetmap.org must adh
 
 But because OpenStreetMap data is free, many other organisations provide map tiles made from OSM data. If your project doesn't meet these requirements, you can get OSM-derived map tiles elsewhere.
 
+Use of any OSMF provided service is further governed by the [OSMF Terms of Use
+](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
+
 ## Requirements
 
 * Heavy use (e.g. distributing an app that uses tiles from openstreetmap.org) is **forbidden** without prior permission from the [System Administrators](https://wiki.openstreetmap.org/wiki/System_Administrators). See below for alternatives.

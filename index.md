@@ -34,13 +34,12 @@ For a full list of reports, please see our [Reports Archive]({{ site.baseurl }}/
 
 Who we are:
 
-* Tom Hughes
-* Grant Slater
-* Jon Burgess
-* Matt Amos
 * Andy Allan
 * Emilie Laffray
-* Brian DeRocher
+* Grant Slater
+* Jon Burgess
+* Paul Norman
+* Tom Hughes
 
 The OSM Operations Team are on Twitter: [@OSM_Tech](https://twitter.com/osm_tech)
 

@@ -12,13 +12,13 @@ The main task of the Operations Working Group is the forecasting of demand and t
 
 Other tasks include:
 
-* Creating policies for OSMF services, such as the tile usage policy or API usage policy
+* Creating [policies]({{ site.baseurl }}/policies/) for OSMF services, such as the Tile Usage Policy or API Usage Policy
 * The organisation and budgeting for hosting OSMF servers
 
 It does not concern itself with:
 
 * Authoring software to run on the services. This is left to the development community
-* Day-to-day running of the servers. This is the remit of the sys admins group
+* Day-to-day running of the servers. This is the remit of the Sysadmins group
 
 # Latest Reports
 

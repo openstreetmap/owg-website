@@ -10,12 +10,12 @@ The key priority for this group is ensuring the operation and smooth running of 
 
 The main task of the Operations Working Group is the forecasting of demand and the purchasing of hardware required to meet the priorities.
 
-Other tasks include
+Other tasks include:
 
 * Creating policies for OSMF services, such as the tile usage policy or API usage policy
 * The organisation and budgeting for hosting OSMF servers
 
-It does not concern itself with
+It does not concern itself with:
 
 * Authoring software to run on the services. This is left to the development community
 * Day-to-day running of the servers. This is the remit of the sys admins group
@@ -30,9 +30,7 @@ It does not concern itself with
 
 For a full list of reports, please see our [Reports Archive]({{ site.baseurl }}/reports/).
 
-# Contact
-
-Who we are:
+# Members
 
 * Andy Allan
 * Emilie Laffray
@@ -40,6 +38,18 @@ Who we are:
 * Jon Burgess
 * Paul Norman
 * Tom Hughes
+
+Former members:
+
+* Matt Amos
+* Sarah Hoffmann
+* Brian DeRocher
+
+# Join Us!
+
+OWG is a volunteer group, and we are always keen to find new members. We are particularly looking for people who can analyse our infrastructure, make plans, forecast future hardware needs, draw up budgets and that sort of thing. This does involve a certain level of technical expertise but it's not writing code, for example, and OWG membership doesn't grant access to any of the servers - that's for our Sysadmins. If you'd like to join us, have a read of our [membership policy](/policies/owg-membership/), and please get in touch!
+
+# Contact
 
 The OSM Operations Team are on Twitter: [@OSM_Tech](https://twitter.com/osm_tech)
 

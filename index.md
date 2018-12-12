@@ -47,7 +47,7 @@ Former members:
 
 # Join Us!
 
-OWG is a volunteer group, and we are always keen to find new members. We are particularly looking for people who can analyse our infrastructure, make plans, forecast future hardware needs, draw up budgets and that sort of thing. This does involve a certain level of technical expertise but it's not writing code, for example, and OWG membership doesn't grant access to any of the servers - that's for our Sysadmins. If you'd like to join us, have a read of our [membership policy](/policies/owg-membership/), and please get in touch!
+OWG is a volunteer group, and we are always keen to find new members. We are particularly looking for people who can analyse our infrastructure, make plans, forecast future hardware needs, draw up budgets and that sort of thing. This does involve a certain level of technical expertise but it's not writing code, for example, and OWG membership doesn't grant access to any of the servers - that's for our Sysadmins. If you'd like to join us, have a read of our [membership policy]({{ site.baseurl }}/policies/owg-membership/), and please get in touch!
 
 # Contact
 

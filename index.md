@@ -20,6 +20,8 @@ It does not concern itself with:
 * Authoring software to run on the services. This is left to the development community
 * Day-to-day running of the servers. This is the remit of the Sysadmins group
 
+We run a public tracker for our tasks at [https://github.com/openstreetmap/operations](https://github.com/openstreetmap/operations).
+
 # Latest Reports
 
 <ul class="posts">

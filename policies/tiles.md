@@ -55,12 +55,10 @@ This policy may change at any time subject to the needs and constraints of the p
 
 ## Alternative OpenStreetMap Tile Providers
 
-Free tile servers based on OSM data:
+Tile servers based on OSM data:
 
-* [Stamen](https://wiki.openstreetmap.org/wiki/Stamen)
-* [Mapbox](https://wiki.openstreetmap.org/wiki/Mapbox)
-* [Carto](https://wiki.openstreetmap.org/wiki/Carto_(Company)#Carto_tile_services)
-* [TMS](https://wiki.openstreetmap.org/wiki/TMS) - listing more
+* [Wiki tile server list](https://wiki.openstreetmap.org/wiki/Tile_servers)
+* [Wiki TMS page](https://wiki.openstreetmap.org/wiki/TMS)
 
 Paid-for tile servers:
 

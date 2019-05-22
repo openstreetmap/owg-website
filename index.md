@@ -34,7 +34,6 @@ For a full list of reports, please see our [Reports Archive]({{ site.baseurl }}/
 
 # Members
 
-* Andy Allan
 * Emilie Laffray
 * Grant Slater
 * Jon Burgess
@@ -46,6 +45,7 @@ Former members:
 * Matt Amos
 * Sarah Hoffmann
 * Brian DeRocher
+* Andy Allan
 
 # Join Us!
 

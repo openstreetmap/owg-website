@@ -26,7 +26,7 @@ Secondary services are services which are used for editing but not a requirement
 ## Tertiary services
 ### Current tertiary services
 * Help (help.openstretmap.org)
-* Official Blog (blog.openstretmap.org)
+* Official Blog (blog.openstreetmap.org)
 * OSMF website (www.osmfoundation.org)
 * Munin (munin.openstreetmap.org)
 * Mailing Lists (lists.openstreetmap.org)

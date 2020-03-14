@@ -15,15 +15,16 @@ Below are the minimum requirements that users of tile.openstreetmap.org must adh
 
 But because OpenStreetMap data is free, many other organisations provide map tiles made from OSM data. If your project doesn't meet these requirements, you can get OSM-derived map tiles elsewhere.
 
-Use of any OSMF provided service is further governed by the [OSMF Terms of Use](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
+Use of any OSMF provided service is further governed by the [OSMF Terms of Use
+](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
 
 ## Requirements
 
-* Heavy use (e.g. distributing an app that uses tiles from openstreetmap.org) is **forbidden** without prior permission from the [Operations Working Group](https://wiki.osmfoundation.org/wiki/Operations_Working_Group). See below for alternatives.
+* Heavy use (e.g. distributing an app that uses tiles from openstreetmap.org) is **forbidden** without prior permission from the [System Administrators](https://wiki.openstreetmap.org/wiki/System_Administrators). See below for alternatives.
 * Clearly display [license](https://wiki.openstreetmap.org/wiki/License) attribution.
 * Do not actively or passively encourage copyright infringement.
 * Calls to **/cgi-bin/export** may only be triggered by direct end-user action. (For example: "click here to export".) The export call is an expensive (CPU+RAM) function to run and will frequently reject when server is under high load.
-* Recommended: Do not hardcode any URL at tile.openstreetmap.org as doing so will limit your ability to react quickly if the service is disrupted or blocked.
+* Highly Recommended: Do not hardcode any URL at tile.openstreetmap.org into an app.
 * Recommended: add a link to [https://www.openstreetmap.org/fixthemap](https://www.openstreetmap.org/fixthemap) to allow your users to report and fix problems in our data.
 
 ## Technical Usage Requirements
@@ -40,7 +41,9 @@ Note: modern web browsers in standard configuration generally pass all the above
 
 Bulk downloading is **strongly discouraged**. Do not download [tiles](https://wiki.openstreetmap.org/wiki/Tiles) unnecessarily.
 
-In particular, downloading an area of over 250 tiles at zoom level 13 or higher for offline or later usage is **forbidden**. These tiles are generally not available (cached) on the server in advance, and have to be rendered specifically for those requests, putting an unjustified burden on the available resources.
+In particular, downloading significant areas of tiles at zoom levels 17 and higher for offline or later usage is **forbidden** without prior consultation with a [System Administrator](https://wiki.openstreetmap.org/wiki/System_Administrators). These tiles are generally not available (cached) on the server in advance, and have to be rendered specifically for those requests, putting an unjustified burden on the available resources.
+
+To avoid having your access blocked, please discuss your requirement with [system administrators](https://wiki.openstreetmap.org/wiki/System_Administrators) either via their wiki pages or on the [IRC channel](https://wiki.openstreetmap.org/wiki/IRC) prior to starting.
 
 ## Privacy
 

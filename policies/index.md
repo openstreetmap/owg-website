@@ -11,7 +11,13 @@ OWG has responsibility for various policies that govern external use of OSMF ser
 * [Tile Usage Policy]({{ site.baseurl }}/policies/tiles/)
 * [Nominatim Usage Policy]({{ site.baseurl }}/policies/nominatim/)
 * [API Usage Policy]({{ site.baseurl }}/policies/api/)
+
+## Website Policies
+
+The OWG has responsibility for some content that appears on OSMF-hosted sites
+
 * [Banner Policy]({{ site.baseurl }}/policies/banner/)
+* [New Tile Layers Policy]({{ site.baseurl }}/policies/new-tile-layers/)
 
 ## Internal policies
 

@@ -33,7 +33,7 @@ The acceptance of an additional tile layer is not automatic and must be assessed
 
 ## Additional notes
 
-* Requests for new layers to go to the [Operations Working Group](operations@osmfoundation.org) who will use these guidelines to evaluate the proposed layer and, if accepted, implement the change.
+* Requests for new layers to go to the [Operations Working Group](mailto:operations@osmfoundation.org) who will use these guidelines to evaluate the proposed layer and, if accepted, implement the change.
 * There is a practical limit to the number of tile layers presented. That limit is currently undetermined.
 * Layers are not guaranteed a permanent place on the map, they may be removed at any time.
 * If a large number of new layer requests is being made, the strategy will have to be re-evaluated at that time.

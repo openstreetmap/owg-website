@@ -39,6 +39,8 @@ For a full list of reports, please see our [Reports Archive]({{ site.baseurl }}/
 * Jon Burgess
 * Paul Norman
 * Tom Hughes
+* Hrvoje Bogner
+* Radoje Stojisic
 
 Former members:
 

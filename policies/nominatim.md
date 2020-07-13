@@ -57,4 +57,4 @@ Please be aware that this usage policy may change without notice. In particular,
 
 For slightly larger requirements you may be able to use commercial third-party providers. Some are listed on the [Nominatim wiki page](https://wiki.openstreetmap.org/wiki/Nominatim#Alternatives_.2F_Third-party_providers).
 
-If your requirements are even larger you can [install your own instance](https://wiki.openstreetmap.org/wiki/Nominatim/Installation) of Nominatim.
+If your requirements are even larger you can [install your own instance](https://nominatim.org/release-docs/latest/admin/Installation/) of Nominatim.

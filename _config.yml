@@ -2,6 +2,7 @@ name: owg-log
 markdown: kramdown
 highlighter: rouge
 baseurl:
+url: https://operations.osmfoundation.org
 defaults:
   -
     scope:

@@ -47,7 +47,8 @@ Use of all services is subject to the [OpenStreetMap Foundation privacy policy](
 ## Changes to this policy
 
 This policy may change at any time subject to the needs and constraints of the project. Commercial services, or those that seek donations, should be especially aware that access may be withdrawn at any point: you may no longer be able to serve your paying customers if access is withdrawn.
-Alternative OpenStreetMap Data Providers
+
+## Alternative OpenStreetMap Data Providers
 
 * [planet.osm](https://wiki.openstreetmap.org/wiki/Planet.osm) (and many 3rd party mirrors) - This bulk data download service offers the entire planet of vector data, as well as diffs for syncing on a minutely basis. Smaller "extract" downloads are available by geographical area.
 * [Xapi](https://wiki.openstreetmap.org/wiki/Xapi) and [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) - These are APIs provided for read only purposes. They are part of the OpenStreetMap ecosystem, but not as "core" as the main editing API covered by this policy. They are however subject to limitations and policies of their own. Note that the servers which run these APIs would be using the same planet.osm diffs to stay in sync.

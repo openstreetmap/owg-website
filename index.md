@@ -22,6 +22,12 @@ It does not concern itself with:
 
 We run a public tracker for our tasks at [https://github.com/openstreetmap/operations/issues](https://github.com/openstreetmap/operations/issues).
 
+# Infrastructure Details and Status
+
+Details on OSMF servers and statistics can be found at https://hardware.openstreetmap.org/. 
+
+Current uptime and status is found at https://uptime.openstreetmap.org/ and [on the wiki](https://wiki.openstreetmap.org/wiki/Platform_Status)
+
 # Latest Reports
 
 <ul class="posts">

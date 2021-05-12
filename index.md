@@ -26,7 +26,7 @@ We run a public tracker for our tasks at [https://github.com/openstreetmap/opera
 
 Details on OSMF servers and statistics can be found at https://hardware.openstreetmap.org/. 
 
-Current uptime and status is found at https://uptime.openstreetmap.org/ and [on the wiki](https://wiki.openstreetmap.org/wiki/Platform_Status)
+There are also uptime and status details on [this community maintained page on the wiki](https://wiki.openstreetmap.org/wiki/Platform_Status), as well as this somewhat unreliable [performance report](https://uptime.openstreetmap.org/). 
 
 # Latest Reports
 

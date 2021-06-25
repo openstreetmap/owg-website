@@ -1,5 +1,5 @@
 ---
-title: 2021 proposed budget
+title: 2021 budget
 ---
 
 This is the budget [approved by the OSMF board in March](https://wiki.osmfoundation.org/wiki/Board/Minutes/2021-03#Operations_Working_Group_budget). It covers a year starting from 2021Q2. Costs for the SRE are budgeted separately.

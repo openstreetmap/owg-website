@@ -1,5 +1,5 @@
 ---
-title: Nominatim Usage Policy
+title: Nominatim Usage Policy (aka Geocoding Policy)
 permalink: /policies/nominatim/
 ---
 

@@ -4,7 +4,7 @@ title: OSMF Operations Working Group
 
 # OSMF Operations Working Group
 
-We're the Operations Working Group for the OpenStreetMap Foundation. The OWG is responsible for proposing the budget for, and running of the servers owned by the [OpenStreetMap Foundation](https://www.osmfoundation.org)
+We're the Operations Working Group (OWG) for the OpenStreetMap Foundation. The OWG is responsible for proposing the budget for, and running of the servers owned by the [OpenStreetMap Foundation](https://wiki.osmfoundation.org/)
 
 The key priority for this group is ensuring the operation and smooth running of the XML editing API and data distribution services (planet files and diff updates). Secondary priorities include the operation of the other OSMF servers.
 
@@ -20,13 +20,13 @@ It does not concern itself with:
 * Authoring software to run on the services. This is left to the development community
 * Day-to-day running of the servers. This is the remit of the Sysadmins group
 
-We run a public tracker for our tasks at [https://github.com/openstreetmap/operations/issues](https://github.com/openstreetmap/operations/issues).
+We run a public tracker for our tasks at https://github.com/openstreetmap/operations/issues.
 
 # Infrastructure Details and Status
 
-Details on OSMF servers and statistics can be found at https://hardware.openstreetmap.org/. 
+Details on OSMF servers and statistics can be found at https://hardware.openstreetmap.org/.
 
-This [performance report](https://uptime.openstreetmap.org/) gives uptime details by service (note that it may not include all servers and services).
+https://uptime.openstreetmap.org/ gives uptime details by service (note that it may not include all servers and services).
 
 # Latest Reports
 
@@ -61,6 +61,6 @@ OWG is a volunteer group, and we are always keen to find new members. We are par
 
 # Contact
 
-The OSM Operations Team are on Twitter: [@OSM_Tech](https://twitter.com/osm_tech)
+The OSM Operations team are on Twitter: [@OSM_Tech](https://twitter.com/osm_tech)
 
 You can get in touch with the whole team at: [operations@osmfoundation.org](mailto:operations@osmfoundation.org)

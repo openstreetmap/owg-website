@@ -20,13 +20,13 @@ It does not concern itself with:
 * Authoring software to run on the services. This is left to the development community
 * Day-to-day running of the servers. This is the remit of the Sysadmins group
 
-We run a public tracker for our tasks at https://github.com/openstreetmap/operations/issues.
+We run a [public issue tracker](https://github.com/openstreetmap/operations/issues) at GitHub for our tasks.
 
 # Infrastructure Details and Status
 
-Details on OSMF servers and statistics can be found at https://hardware.openstreetmap.org/.
+Details on OSMF servers and statistics can be found at [OSMF Server Info](https://hardware.openstreetmap.org/).
 
-https://uptime.openstreetmap.org/ gives uptime details by service (note that it may not include all servers and services).
+[OpenStreetMap Server Status](https://uptime.openstreetmap.org/) gives uptime details by service (note that it may not include all servers and services).
 
 # Latest Reports
 

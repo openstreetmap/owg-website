@@ -22,7 +22,7 @@ Use of any OSMF provided service is further governed by the [OSMF Terms of Use
 
 ## Requirements
 
-* Clearly display [licence](https://wiki.openstreetmap.org/wiki/Licence) attribution as required.
+* Clearly display [licence](https://wiki.openstreetmap.org/wiki/Licence) [attribution](https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines) as required.
 * Do not actively or passively encourage copyright infringement.
 
 ## Technical Usage Requirements

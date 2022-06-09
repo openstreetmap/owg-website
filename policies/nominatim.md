@@ -18,7 +18,7 @@ Use of any OSMF provided service is further governed by the [OSMF Terms of Use
 
 * No heavy uses (an absolute **maximum of 1 request per second**).
 * Provide a valid **HTTP Referer** or **User-Agent** identifying the application (stock User-Agents as set by http libraries will not do).
-* Clearly display attribution as suitable for your medium.
+* Clearly display [attribution](https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines) as suitable for your medium.
 * Data is provided under the [ODbL](https://openstreetmap.org/copyright) license which requires to share alike (although small extractions are likely to be covered by fair usage / fair dealing).
 
 ### Websites and Apps

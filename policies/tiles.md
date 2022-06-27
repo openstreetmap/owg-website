@@ -22,7 +22,6 @@ Use of any OSMF provided service is further governed by the [OSMF Terms of Use](
 * Heavy use (e.g. distributing an app that uses tiles from openstreetmap.org) is **forbidden** without prior permission from the [Operations Working Group](https://wiki.osmfoundation.org/wiki/Operations_Working_Group). See below for alternatives.
 * Clearly display [license](https://wiki.openstreetmap.org/wiki/License) [attribution](https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines).
 * Do not actively or passively encourage copyright infringement.
-* Calls to **/cgi-bin/export** may only be triggered by direct end-user action. (For example: "click here to export".) The export call is an expensive (CPU+RAM) function to run and will frequently reject when server is under high load.
 * Recommended: Do not hardcode any URL at tile.openstreetmap.org as doing so will limit your ability to react quickly if the service is disrupted or blocked.
 * Recommended: add a link to [https://www.openstreetmap.org/fixthemap](https://www.openstreetmap.org/fixthemap) to allow your users to report and fix problems in our data.
 

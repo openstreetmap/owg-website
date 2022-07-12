@@ -27,7 +27,7 @@ Use of any OSMF provided service is further governed by the [OSMF Terms of Use](
 
 ## Technical Usage Requirements
 
-* **Valid [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)** identifying application. Faking another app's User-Agent WILL get you blocked. Using a library's default User-Agent is **NOT** recommended.
+* **Valid [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)** identifying application along with matching [Client Hints](https://developer.mozilla.org/en-US/docs/Web/HTTP/Client_hints). Faking another app's User-Agent WILL get you blocked. Using a library's default User-Agent is **NOT** recommended.
 * When coming from a web page, a **valid [HTTP Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer)**. Apps generally do not have a HTTP referer.
 * **DO NOT send no-cache headers**. ("Cache-Control: no-cache", "Pragma: no-cache" etc.)
 * **Cache Tile** downloads locally according to HTTP Expiry Header, alternatively a minimum of 7 days.

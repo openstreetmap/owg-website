@@ -38,7 +38,7 @@ We request that you
 * set up your own data server, usually with [planet.osm](https://wiki.openstreetmap.org/wiki/Planet.osm) and [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis): or
 * use another provider. See list below.
 
-All of the tools and software needed to create a complete mirror of OpenStreetMap and/or its API are available as open source software and can be found in OpenStreetMap's source repositories at [git.openstreetmap.org](http://git.openstreetmap.org/) with an explanation of how to set it up in the [wiki](https://wiki.openstreetmap.org/wiki/Rails_port). Additional useful tools and API's can be found there too.
+All of the tools and software needed to create a complete mirror of OpenStreetMap and/or its API are available as open source software and can be found in OpenStreetMap's source repositories at [github.com/openstreetmap/](https://github.com/openstreetmap/) with an explanation of how to set it up in the [wiki](https://wiki.openstreetmap.org/wiki/Rails_port). Additional useful tools and API's can be found there too.
 
 ## Privacy
 

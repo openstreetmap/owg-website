@@ -1,5 +1,5 @@
 ---
-title: Security Policy
+title: Security Reporting Policy
 permalink: /policies/security/
 ---
 

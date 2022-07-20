@@ -17,7 +17,7 @@ At the time of the failure the Operations Team had not yet installed out-of-band
 ## Timeline
 
 - 2022-05-02 - Notification of Equinix of upcoming 5 year maintenance on Power Feed A supplying our servers in Amsterdam (8 hour window)
-- 2022-05-07 - OpenStreetMap Operations Ticket logged for upcoming Equinix maintenance: https://github.com/openstreetmap/operations/issues/621
+- 2022-05-07 - OpenStreetMap Operations Ticket logged for upcoming Equinix maintenance: https://github.com/openstreetmap/operations/issues/621 (no OpenStreetMap.org outage was expected)
 - 2022-06-05 - Notification of Cogent network outage maintenance (5 hour window, outage of 45 - 60 minutes) and ticket created: https://github.com/openstreetmap/operations/issues/632
 - 2022-06-06 - OpenStreetMap Operation announce the upcoming Cogent network outage maintenance: https://twitter.com/OSM_Tech/status/1533555914351030274
 - 2022-06-10 22:00 (UTC) - Start of Cogent maintenance window
@@ -35,41 +35,58 @@ At the time of the failure the Operations Team had not yet installed out-of-band
 - 2022-06-12 04:03 (UTC) - OpenStreetMap Operation acknowledge outage: https://twitter.com/OSM_Tech/status/1535835250508861440
 - 2022-06-12 04:22 (UTC) - OpenStreetMap Operation are able to confirm that Switch-1 was offline power maintenance window as suspected.
 - 2022-06-20 - Site visit - Decommision old machines
-- 2022-06-21 - Site visit - Install 4G out-of-band
+- 2022-06-21 - Site visit - Install 4G out-of-band access device
 - 2022-06-22 - Site visit - Test power failure scenario. STANDBY === NO POWER SUPPLIED
 
 ## What went wrong
 
 It was expected that during the maintenance of power feed A (MDP-A/MCC-A) that the Cisco Redundant Power System would supply Cisco Switch-1 and Cisco Switch-2 from the remaining power feed B (MDP-B/MCC-B). During the install of the Cisco Redundant Power System in December 2018 this power failure scenario had been tested and confirmed working.
 
-The initial working hyposis was that the Cisco Redundant Power System power supply connected to power feed A (MDP-A/MCC-A) had failed which caused a full power outage on Switch-1. With Switch-1 offline the uplink to Cogent was unavailable leaving all OpenStreetMap.org services hosted at Amsterdam without connectivity to the Internet (www, API, wiki, planet). Switch-2 remained operation due to its internal power supply being directly connected to power feed B
+The initial working hyposis was that the Cisco Redundant Power System power supply connected to power feed B (MDP-B/MCC-B) had failed which caused a full power outage on Switch-1. With Switch-1 offline the uplink to Cogent was unavailable leaving all OpenStreetMap.org services hosted in Amsterdam without connectivity to the Internet (www, API, wiki, planet). Switch-2 remained operation due to its internal power supply being directly connected to power feed B
 
 The lack of out-of-band equipment installed in Amsterdam prevented OpenStreetMap Operations from being able to investigate the cause of the failure when the uplink was unavailable.
 
 During the follow up site visit, it was identified that both power supplies (feed A and feed B) in the Cisco Redundant Power System were fully operational. A test was later performed which identified that the Cisco Redundant Power System could enter a "standby" state where the Cisco Redundant Power System would not supply power to the switches. Without the redundant power feed a switch would fail if its internal power supply lost power (Switch-1 power feed A, Switch-2 power feed B). The Cisco Redundant Power System "standby" state could be switched to "active" supply by configuration using the IO panel on the Cisco Redundant Power System. The power state of the Cisco Redundant Power System can be monitored from the switches via the CLI.
 
-It is unclear how the Cisco Redundant Power System entered the "standby" state.
+It is unclear how the Cisco Redundant Power System entered the "standby" state. The state can be checked from the switch by using the CLI `show system` command
+
+What the switches report when the Cisco Redundant Power System is in "standby" mode
+
+| Unit | Main Power Supply |Redundant Power Supply |
+|:----:|:-----------------:|:---------------------:|
+| 1    | Active            |  Not Connected        |
+| 2    | Active            |  Not Connected        |
+
+
+What the switches report when the Cisco Redundant Power System is in "active" mode
+
+| Unit | Main Power Supply |Redundant Power Supply |
+|:----:|:-----------------:|:---------------------:|
+| 1    | Active            |  Available            |
+| 2    | Active            |  Available            |
 
 # Preventing the issue from happening again / What we have learnt
 
 1. Improve our response time to acknowledge ongoing outages. Follow us at https://twitter.com/OSM_Tech for alerts.
 
-2. The OpenStreetMap Ops have decided to replace the Cisco SG550X-48 switches (Switch-1 and Switch-2) and the Cisco Redundant Power System with Juniper EX4300 switches with redundant power supplies. We use Juniper EX4300 switches in Dublin and they have been extremely reliable. The replacement switches were expected to be installed on the 20/21/22 Jun 2022 during the site visit but install was delayed due to supply chain parts shortage. As of 19 July 2022 all components are now on-site.
+2. Add monitoring and alerting of switch PSU and FAN states. https://github.com/openstreetmap/operations/issues/689
 
-3. During the 20/21/22 June 2022 site visit out-of-band access equipment (4G modem serial console server) with dual power feeds was installed.
+3. The OpenStreetMap Ops have decided to replace the Cisco SG550X-48 switches (Switch-1 and Switch-2) and the Cisco Redundant Power System with Juniper EX4300 switches with redundant power supplies. We use Juniper EX4300 switches in Dublin and they have been extremely reliable. The replacement switches were expected to be installed during the 20/21/22 Jun 2022 site visit but installation was delayed due to supply chain parts shortage delaying delivery of some switch components. As of 19 July 2022 all components are now on-site pending install. https://github.com/openstreetmap/operations/issues/656
 
-4. As of 19 July 2022 the installation of redundant uplinks is still pending. The OpenStreetMap Operations team continue to follow-up.
+4. During the 20/21/22 June 2022 site visit out-of-band access equipment (4G modem serial console server) with dual power feeds was installed. https://github.com/openstreetmap/operations/issues/655
 
-5. Make site failover easier, less manual, and lower risk. It is currently an error-prone manual process.
+5. As of 19 July 2022 the installation of redundant uplinks is still pending. The OpenStreetMap Operations team continue to follow-up.
 
-6. It has been identified that an on-call "pager" system is required by the OpenStreetMap Operations SRE. As of 19 July 2022 the vendor negotiations are ongoing.
+6. Make site failover easier, less manual, and lower risk. It is currently an error-prone manual process. https://github.com/openstreetmap/operations/issues/635
 
-7. Invest in site reliability, which we're already doing. The new site reliability engineer (and author of this post) started as the OSMF's first employee two months ago, and couldn't wish for a better baptism of fire. In the long term, because no person can be on call 24/7, we will expand our SRE team.
+7. It has been identified that an on-call "pager" system is required by the OpenStreetMap Operations SRE. As of 19 July 2022 the vendor negotiations are ongoing.
 
-8. Continue and formalise tests for fail-over of equipment on power, network, upstream link and service outages.
+8. Invest in site reliability, which we're already doing. The new site reliability engineer (and author of this post) started as the OSMF's first employee two months ago, and couldn't wish for a better baptism of fire. In the long term, because no person can be on call 24/7, we will expand our SRE team.
+
+9. Continue and formalise tests for fail-over of equipment on power, network, upstream link and service outages.
 
 # In closing
 
-If you rely on OpenStreetMap, or just enjoy using it or mapping, please help us achieve these goals. Network equipment, bandwidth, hosting, servers, staffing and operations are expensive, and you can help us with a donation or by becoming an individual or corporate member.
+If you rely on OpenStreetMap, or just enjoy using it or mapping, please help us achieve these goals. Network equipment, bandwidth, hosting, servers, staffing and operations are expensive, and you can help us with a [donation](https://donate.openstreetmap.org) or by [becoming an individual or corporate member](https://wiki.osmfoundation.org/wiki/Membership).
 
-The Operations Working Group is always looking for volunteer knowledgeable system and network admins.
+The [Operations Working Group](https://operations.osmfoundation.org/) is always looking for volunteer knowledgeable system and network admins.

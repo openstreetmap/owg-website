@@ -16,8 +16,8 @@ Within Europe, Fastly additionally distributes traffic by map location, with "od
 | Server   | [Relative<br>capacity](https://github.com/openstreetmap/chef/pull/513#issue-1304362286) | Location                        | Traffic Served |
 |:--------|:---|:-------------------------------|:--------------|
 | [odin](https://hardware.openstreetmap.org/servers/odin.openstreetmap.org/) | 1 | Amsterdam, Netherlands | Europe "even" traffic
-| [nidhogg](https://hardware.openstreetmap.org/servers/nidhogg.openstreetmap.org/)  | 1 | Umeå, Sweden | Europe "even" traffic
-| [ysera](https://hardware.openstreetmap.org/servers/ysera.openstreetmap.org/)    | 3 | Slough, United Kingdom | Europe "odd" traffic
+| [nidhogg](https://hardware.openstreetmap.org/servers/nidhogg.openstreetmap.org/)  | 3 | Umeå, Sweden | Europe "even" traffic
+| [ysera](https://hardware.openstreetmap.org/servers/ysera.openstreetmap.org/)    | 1 | Slough, United Kingdom | Europe "odd" traffic
 | [culebre](https://hardware.openstreetmap.org/servers/culebre.openstreetmap.org/)  | 3 | Dublin, Ireland | Europe "odd" traffic
 | [balerion](https://hardware.openstreetmap.org/servers/balerion.openstreetmap.org/) | 1 | Carlton, Victoria, Australia | Australia and Asia
 | [bowser](https://hardware.openstreetmap.org/servers/bowser.openstreetmap.org/)   | 1 | Carlton, Victoria, Australia | Australia and Asia
@@ -83,4 +83,4 @@ Operations then pushed Fastly config #310 to alter the health check and make it 
 - Investigate how to monitor Fastly's health check responses [_DONE_](https://github.com/openstreetmap/operations/issues/695)
 - Add a prometheus alert for hosts shown as down by Statuscake [_DONE_](https://github.com/openstreetmap/chef/commit/2fb1b5fe069034178b0d1426bba953e7b3a661ad)
 - Add a prometheus alert for unusually low apache request rates [_DONE_](https://github.com/openstreetmap/chef/commit/12e55b9a956bcbed90ce4f925ef56e9e1812eda0)
-- Backport Apache fix _DONE_
+- Build new version of Apache with fix _DONE_

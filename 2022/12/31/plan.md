@@ -8,7 +8,7 @@ Hardware capital costs and subscription costs are based on current prices and ma
 
 All costs are converted in Euros, but may be incurred in USD or GBP. For the purposes of budgeting, 1 EUR = 0.86 GBP = 1.04 USD. Costs do not include VAT, which is added at the end.
 
-As in previous years, a 🔴low, 🟡medium, and 🟢high option is presented. Under the low option essential services would remain running, but capital costs and maintenance would be deferred and some secondary services would need to reduce in scope.
+As in previous years, a 🔴 low, 🟡 medium, and 🟢 high option is presented. Under the low option essential services would remain running, but capital costs and maintenance would be deferred and some secondary services would need to reduce in scope.
 
 When comparing with the [previous budget](https://operations.osmfoundation.org/2022/07/25/budget.html) keep in mind that the last budget was for half the time.
 
@@ -27,41 +27,46 @@ There is [considerable uncertainty](https://github.com/openstreetmap/operations/
 
 Item | Operational cost | Capital cost
 -|-|-
-🔴Cloud hosting | € 24 000 |
+🔴 Cloud hosting | € 24 000 |
+{:.table.table-hover.w-auto}
 
 ## Amsterdam site hosting
 Amsterdam is a primary hosting location. This includes budgeting for necessary network upgrades. Money for expected power cost increases has been included.
 
 Item | Operational cost | Capital cost
 -|-|-
-🔴Power and space | € 14 655 |
-🔴Network | € 3 000 |
-🔴Remote hands | € 1 500 |
+🔴 Power and space | € 14 655 |
+🔴 Network | € 3 000 |
+🔴 Remote hands | € 1 500 |
+{:.table.table-hover.w-auto}
 
 ## Dublin site hosting
 Dublin is a primary hosting location.
 
 Item | Operational cost | Capital cost
 -|-|-
-🔴Power and space | € 17 700 |
-🔴Network | € 10 385 |
-🔴Remote hands | € 1 500 |
+🔴 Power and space | € 17 700 |
+🔴 Network | € 10 385 |
+🔴 Remote hands | € 1 500 |
+{:.table.table-hover.w-auto}
 
 ## Subscriptions
 We use subscriptions for domains, monitoring, and other services
 
 Item | Operational cost | Capital cost
 -|-|-
-🔴Domains | € 872 |
-🔴Monitoring | € 178 |
-🔴Discourse translations | € 500 |
+🔴 Domains | € 872 |
+🔴 Monitoring | € 178 |
+🔴 Discourse translations | € 500 |
+{:.table.table-hover.w-auto}
 
 ## Insurance
 We assume that the admin assistant and treasurer will have insurance options for 2023Q3.
 
 Item | Operational cost | Capital cost
 -|-|-
-🔴Insurance | € 3 000 |
+🔴 Insurance | € 3 000 |
+{:.table.table-hover.w-auto}
 
 # 2023Q1
 ## Network upgrades
@@ -69,8 +74,9 @@ Currently each site has a single uplink, leading to an outage if that link is in
 
 Item | Operational cost | Capital cost
 -|-|-
-🔴AM6 Network | € 10 800 | € 500
-🟡DB4 Network | €  2 400 | € 500
+🔴 AM6 Network | € 10 800 | € 500
+🟡 DB4 Network | €  2 400 | € 500
+{:.table.table-hover.w-auto}
 
 # 2023Q2
 ## Scheduled general-purpose server replacement
@@ -79,7 +85,8 @@ We use general-purpose servers for most of our services. When they get too old t
 
 Item | Operational cost | Capital cost
 -|-|-
-🟡General-purpose servers | € 0 | 2x € 5 500
+🟡 General-purpose servers | € 0 | 2x € 5 500
+{:.table.table-hover.w-auto}
 
 ## US rendering server
 We have two rendering servers in the US, one sponsored by OSM US, and one VM sponsored by AWS. The OSM US server is old and overdue for replacement. We anticipate finding a sponsor for a new US-based server, but if we are unable to do so we will need to buy a new server in order to avoid sending west coast traffic to Europe.
@@ -88,7 +95,8 @@ As used machines have become more powerful, we anticipate a lower cost than prev
 
 Item | Operational cost | Capital cost
 -|-|-
-🟡Rendering server | € 0 | 1x € 6 500
+🟡 Rendering server | € 0 | 1x € 6 500
+{:.table.table-hover.w-auto}
 
 # 2023Q3
 ## Scheduled API Database server replacement
@@ -98,7 +106,8 @@ This upgrade is required in order to maintain the ability to run the website if 
 
 Item | Operational cost | Capital cost
 -|-|-
-🟡API DB server | € 0 | € 25 000
+🟡 API DB server | € 0 | € 25 000
+{:.table.table-hover.w-auto}
 
 # 2023Q4
 ## New US general-purpose server for monitoring
@@ -107,7 +116,8 @@ For monitoring, it is useful to have the monitoring services located outside our
 
 Item | Operational cost | Capital cost
 -|-|-
-🟢General-purpose servers | € 0 | 1x € 5 500
+🟢 General-purpose servers | € 0 | 1x € 5 500
+{:.table.table-hover.w-auto}
 
 # Unbudgeted costs
 ## Staff costs
@@ -144,3 +154,4 @@ Replacement parts and labor for new servers | € 25 | € 2 175 | € 2 450
 Contingency                                 | € 4 480 | € 11 050 | € 11 875
 VAT                                         | € 9 310 | € 14 772 | € 15 382
 Total                                       | € 102 405 | € 161 937 | € 169 197
+{:.table.table-hover.w-auto}

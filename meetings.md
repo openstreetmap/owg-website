@@ -5,8 +5,39 @@ permalink: /meetings/
 
 # {{ page.title }}
 
-Most of the OWG activities are carried out via email and our [public issues tracker](https://github.com/openstreetmap/operations), but we sometimes hold meetings too.
+Most of the OWG activities are carried out via email and our [public issues tracker](https://github.com/openstreetmap/operations), we also normally have an online video call once every 2 weeks.
 
+* [2023-01-26 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2023-01-26)
+* [2023-01-12 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2023-01-12)
+* [2022-04-21 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2022-04-01_Meeting_about_community.osm.org_and_Discourse) (Meeting about community.osm.org and Discourse)
+* [2022-04-07 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2022-04-07)
+* [2022-04-01 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2022-04-21_Meeting_about_community.osm.org_and_Discourse) (Meeting about community.osm.org and Discourse)
+* [2022-03-10 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2022-03-10)
+* [2022-01-27 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2022-01-27)
+* [2022-01-13 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2022-01-13)
+* [2021-10-06 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-10-06)
+* [2021-09-22 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-09-22)
+* [2021-09-08 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-09-08)
+* [2021-08-25 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-08-25)
+* [2021-06-16 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-06-16)
+* [2021-06-02 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-06-02)
+* [2021-05-19 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-05-19)
+* [2021-05-05 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-05-05)
+* [2021-04-21 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-04-21)
+* [2021-04-07 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-04-07)
+* [2021-03-24 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-03-24)
+* [2021-03-10 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2021-03-10)
+* [2020-09-23 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-09-23)
+* [2020-09-09 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-09-09)
+* [2020-08-26 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-08-26)
+* [2020-08-12 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-08-12)
+* [2020-07-29 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-07-29)
+* [2020-07-15 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-07-15)
+* [2020-07-01 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-07-01)
+* [2020-06-04 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-06-04)
+* [2020-05-22 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-05-22)
+* [2020-05-04 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-05-04)
+* [2020-04-10 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2020-04-10)
 * [2017-12-11 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2017-12-11.pdf)
 * [2016-10-20 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-10-20.pdf)
 * [2016-08-01 OWG Summary]({{ site.baseurl }}/files/OWG_Summary_2016-08-01.pdf)
@@ -28,3 +59,5 @@ Most of the OWG activities are carried out via email and our [public issues trac
 * [2011-01-26 TWG Meeting Summary]({{ site.baseurl }}/files/TWGmeetingsummary2011-01-26.pdf)
 * [2010-11-11 TWG Meeting Summary]({{ site.baseurl }}/files/TWGmeetingsummary2010-11-11.pdf)
 * [2010-08-25 TWG Meeting Summary]({{ site.baseurl }}/files/TWGMeetingSummary2010-08-25.pdf)
+
+Additional minutes may be available on the [OpenStreetMap Foundation Wiki](https://wiki.osmfoundation.org/wiki/Special:PrefixIndex?prefix=Operations%2FMinutes)

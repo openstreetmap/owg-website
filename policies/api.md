@@ -5,7 +5,7 @@ permalink: /policies/api/
 
 # {{ page.title }}
 
-*This forms part of a set of usage policies governing core OpenStreetMap services. Note that 'API' relates to the data editing API. For developers accessing maps (often using javascript "APIs") the OpenStreetMap Tile Usage Policy is more relevant*
+*This forms part of a set of usage policies governing core OpenStreetMap services. Note that 'API' relates to the data editing API. For developers accessing maps (often using javascript "APIs") the OpenStreetMap [Tile Usage Policy]({{ site.baseurl }}/policies/tiles/) is more relevant*
 
 ------
 
@@ -17,8 +17,7 @@ To avoid having your access blocked, please discuss your requirement with [syste
 
 The OSMF Operations Working Group (OWG) are the team in charge of API Usage policies for OSMF-run services.
 
-Use of any OSMF provided service is further governed by the [OSMF Terms of Use
-](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
+Use of any OSMF provided service is further governed by the [OSMF Terms of Use](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
 
 ## Requirements
 
@@ -35,10 +34,10 @@ Use of any OSMF provided service is further governed by the [OSMF Terms of Use
 
 We request that you
 
-* set up your own data server, usually with [planet.osm](https://wiki.openstreetmap.org/wiki/Planet.osm) and [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis): or
+* set up your own data server, usually with [planet.osm](https://wiki.openstreetmap.org/wiki/Planet.osm); or
 * use another provider. See list below.
 
-All of the tools and software needed to create a complete mirror of OpenStreetMap and/or its API are available as open source software and can be found in OpenStreetMap's source repositories at [github.com/openstreetmap/](https://github.com/openstreetmap/) with an explanation of how to set it up in the [wiki](https://wiki.openstreetmap.org/wiki/Rails_port). Additional useful tools and API's can be found there too.
+All of the tools and software needed to create a complete mirror of OpenStreetMap and/or its API are available as open source software and can be found in OpenStreetMap's source repositories at [github.com/openstreetmap/](https://github.com/openstreetmap/). Additional useful tools and API's can be found there too.
 
 ## Privacy
 
@@ -51,5 +50,5 @@ This policy may change at any time subject to the needs and constraints of the p
 ## Alternative OpenStreetMap Data Providers
 
 * [planet.osm](https://wiki.openstreetmap.org/wiki/Planet.osm) (and many 3rd party mirrors) - This bulk data download service offers the entire planet of vector data, as well as diffs for syncing on a minutely basis. Smaller "extract" downloads are available by geographical area.
-* [Xapi](https://wiki.openstreetmap.org/wiki/Xapi) and [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) - These are APIs provided for read only purposes. They are part of the OpenStreetMap ecosystem, but not as "core" as the main editing API covered by this policy. They are however subject to limitations and policies of their own. Note that the servers which run these APIs would be using the same planet.osm diffs to stay in sync.
-* See [List of Companies offering OpenStreetMap Services / Support / Consulting](https://wiki.openstreetmap.org/wiki/Commercial_OSM_Software_and_Services)
+* [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) - This is an API provided for read only purposes. It is part of the OpenStreetMap ecosystem, but not as "core" as the main editing API covered by this policy. They are however subject to limitations and policies of their own. Note that the servers which run these APIs would be using the same planet.osm diffs to stay in sync.
+* See [List of Companies offering OpenStreetMap Services / Support / Consulting](https://wiki.openstreetmap.org/wiki/Commercial_OSM_Software_and_Services).

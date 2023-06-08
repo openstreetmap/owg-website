@@ -33,7 +33,7 @@ Apps must make sure that they can switch the service at our request at any time 
 
 As a general rule, bulk geocoding of larger amounts of data is **not** encouraged. If you have regular geocoding tasks, please, look into alternatives below. Smaller one-time bulk tasks may be permissible, if these additional rules are followed
 
-* limit your requests to **a single thread**
+* limit your requests to **a single thread** ( no multithreading/concurrency/parallelism )
 * limited to 1 machine only, **no distributed scripts** (including multiple Amazon EC2 instances or similar)
 * Results **must be cached** on your side. Clients sending repeatedly the same query may be classified as faulty and blocked.
 

@@ -23,6 +23,7 @@ Use of any OSMF provided service is further governed by the [OSMF Terms of Use](
 
 * Clearly display [licence](https://wiki.openstreetmap.org/wiki/Licence) [attribution](https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines) as required.
 * Do not actively or passively encourage copyright infringement.
+* Do not submit website forms in an automated manner or on behalf of users. Website forms are intended only for users interacting directly with the website.
 
 ## Technical Usage Requirements
 

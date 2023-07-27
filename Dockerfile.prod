@@ -16,7 +16,7 @@ WORKDIR /app
 ADD Gemfile* /app/
 
 # Install Gems
-RUN gem install bundler -v 2.4.5 \
+RUN gem install bundler -v 2.4.17 \
     && bundle config build.nokogiri --use-system-libraries \
     && bundle config --global jobs $(nproc) \
     && bundle config set deployment 'true' \

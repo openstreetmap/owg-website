@@ -34,7 +34,7 @@ RUN bundle exec jekyll build --verbose
 
 #-------------------------------------------------
 # https://github.com/nginxinc/docker-nginx-unprivileged
-FROM docker pull ghcr.io/nginxinc/nginx-unprivileged:stable-alpine as webserver
+FROM ghcr.io/nginxinc/nginx-unprivileged:stable-alpine as webserver
 
 RUN echo "absolute_redirect off;" >/etc/nginx/conf.d/no-absolute_redirect.conf
 RUN echo "gzip_static on; gzip_proxied any;" >/etc/nginx/conf.d/gzip_static.conf

@@ -28,3 +28,4 @@ Our internal policies govern the way that OWG operates:
 * [Sysadmin Membership Policy]({{ site.baseurl }}/policies/sysadmin-membership)
 * [Hosting Provider Credit Policy]({{ site.baseurl }}/policies/hosting/)
 * [Service Classification Policy]({{ site.baseurl }}/policies/classification/)
+* [Operations Working Group Travel Policy]({{ site.baseurl }}/policies/travel/)

@@ -12,7 +12,7 @@ See also: [OSMF policy on expense claims](https://wiki.osmfoundation.org/wiki/Fi
 For travel costs to OSMF sites to be expensed by the OSMF, the following rules must be followed:
 
 * The travel purpose needs to be announced to and approved by the OWG. The exact requirements for approval are at the discretion of the OWG.
-* Once approved, travel arrangements are usually to be made autonomously by the person travelling without requiring further approval from OWG or the board. However, inform the OWG and, if applicable, your point of contact on the personal committee about the plans.
+* Once approved, travel arrangements are usually to be made autonomously by the person travelling without requiring further approval from OWG or the board. However, inform the OWG and, if applicable, your point of contact on the personnel committee about the plans.
 * OWG-related travel may be mixed with private travel. The OSMF will pay for the costs that would have accrued for the same journey without a privately spent section of the journey. The OSMF part of the budget of travel arrangements with such mixed purpose needs to be approved by the OWG.
 * OWG includes an estimate about the frequency of travel required over the year in their annual budget. It informs the board if circumstances change and significantly more travel is needed.
 

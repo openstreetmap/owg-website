@@ -13,33 +13,41 @@ However, **OpenStreetMap's own servers are run entirely on donated resources.** 
 
 Below are the minimum requirements that users of tile.openstreetmap.org must adhere to. These may change in future, depending on available resources. Should any users or patterns of usage nevertheless cause problems to the service, access may still be blocked without prior notice. We will try to contact relevant parties if possible, but cannot guarantee this.
 
+Although our map tiles are generally very reliable, their availability to others is on a best effort basis and we offer no SLA or guarantees.
+
 Because OpenStreetMap data is free, many other organisations provide map tiles made from OSM data. If your project doesn't meet our requirements, you can get OSM-derived map tiles elsewhere.
 
 Use of any OSMF provided service is further governed by the [OSMF Terms of Use](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
 
+## Usage
+
+The correct URL for the tiles is `https://tile.openstreetmap.org/{zoom}/{x}/{y}.png`. Other subdomains are not recommended as they may be slower or discontinued in the future. We are unable to offer support on how to make your preferred map library work with this URL and recommend you consult its documentation.
+
 ## Requirements
 
-* Heavy use (e.g. distributing a heavy-usage app that uses tiles from openstreetmap.org) is **forbidden** without prior permission from the [Operations Working Group](https://wiki.osmfoundation.org/wiki/Operations_Working_Group). See below for alternatives.
-* Clearly display [license](https://wiki.openstreetmap.org/wiki/License) [attribution](https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines).
+* Clearly display [license](https://wiki.openstreetmap.org/wiki/License) [attribution](https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines), normally in the bottom-right corner of the map.
 * Do not actively or passively encourage copyright infringement.
 * Recommended: Do not hardcode any URL to tile.openstreetmap.org as doing so will limit your ability to react if the service is disrupted or blocked. In particular, switching should be possible without requiring a software update.
 * Recommended: add a link to [https://www.openstreetmap.org/fixthemap](https://www.openstreetmap.org/fixthemap) to allow your users to report and fix problems in our data.
+* Recommended: a contact email on your web page or app store page. If we cannot find contact information we will be unable to do anything except block if an issue arises.
 
 ## Technical Usage Requirements
 
-* **Valid [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)** identifying application. Faking another app's User-Agent WILL get you blocked. Using a library's default User-Agent is **NOT** recommended. If a device automatically sends an X-Requested-With header with an application specific Application ID, this will be considered an acceptable substitute for the HTTP User-Agent, although we still recommend setting a valid HTTP User-Agent for the application.
+* **Valid [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)** identifying application. Faking another app's User-Agent WILL get you blocked. Using a library's default User-Agent is **NOT** recommended as they may be blocked if another user of the library is misusing it. If a device automatically sends an X-Requested-With header with an application specific Application ID, this will be considered an acceptable substitute for the HTTP User-Agent, although we still recommend setting a valid HTTP User-Agent for the application.
 * When coming from a web page, a **valid [HTTP Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer)**. Apps generally do not have a HTTP referer.
 * **DO NOT send no-cache headers**. ("Cache-Control: no-cache", "Pragma: no-cache" etc.)
 * **Cache Tile** downloads locally according to HTTP Expiry Header, alternatively a minimum of 7 days.
-* **Maximum of 2 download connections**. (Unmodified web browsers' download limits are acceptable.)
+* Recommended: HTTP/2 or HTTP/3 support to allow multiplexed downloads
 
-Note: modern web browsers in standard configuration generally pass all the above technical requirements.
+Note: modern web browsers in standard configuration pass all the above technical requirements.
 
 ## Bulk Downloading
 
-Bulk downloading is **strongly discouraged**. Do not download [tiles](https://wiki.openstreetmap.org/wiki/Tiles) unnecessarily.
+Bulk downloading ("scraping") is the downloading of tiles in advance instead of downloading when a user views those tiles. Common examples include creating a tile archive or downloading for offline usage. Bulk downloading is **prohibited**. These tiles are generally not cached on the server in advance and have to be rendered specifically for those requests, putting an unjustified burden on the available resources.
 
-In particular, downloading an area of over 250 tiles at zoom level 13 or higher for offline or later usage is **forbidden**. These tiles are generally not available (cached) on the server in advance, and have to be rendered specifically for those requests, putting an unjustified burden on the available resources.
+## Caching proxies
+
+We generally do not recommend setting up a caching service in front of tile.openstreetmap.org. If you decide to do so it **must** set a HTTP User-Agent that allows us to contact you in case of issues.
 
 ## Privacy
 

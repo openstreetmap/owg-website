@@ -12,13 +12,13 @@ The main task of the Operations Working Group is the forecasting of demand and t
 
 Other tasks include:
 
-* Creating [policies]({{ site.baseurl }}/policies/) for OSMF services, such as the Tile Usage Policy or API Usage Policy
-* The organisation and budgeting for hosting OSMF servers
+- Creating [policies]({{ site.baseurl }}/policies/) for OSMF services, such as the Tile Usage Policy or API Usage Policy
+- The organisation and budgeting for hosting OSMF servers
 
 It does not concern itself with:
 
-* Authoring software to run on the services. This is left to the development community
-* Day-to-day running of the servers. This is the remit of the Sysadmins group
+- Authoring software to run on the services. This is left to the development community
+- Day-to-day running of the servers. This is the remit of the Sysadmins group
 
 We run a [public issue tracker](https://github.com/openstreetmap/operations/issues) at GitHub for our tasks.
 
@@ -30,30 +30,44 @@ Details on OSMF servers and statistics can be found at [OSMF Server Info](https:
 
 # Latest Reports
 
+### Board Reports (Monthly)
+
 <ul class="posts">
   {% for post in site.posts limit: 6 %}
-    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% if post.categories contains 'board-reports' %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 
-For a full list of reports, please see our [Reports Archive]({{ site.baseurl }}/reports/).
+### Incident Reports
+
+<ul class="posts">
+  {% for post in site.posts limit: 6 %}
+   {% if post.categories contains 'incident-reports' %}
+    <li><a href="{{ site.baseurl }}{{ incident.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+For a full list of reports, please see our [Board Reports Archive]({{ site.baseurl }}/board-reports/) or [Incident Reports Archive]({{ site.baseurl }}/incident-reports/).
 
 # Members
 
-* Emilie Laffray
-* Grant Slater
-* Jon Burgess
-* Paul Norman
-* Tom Hughes
-* Hrvoje Bogner
-* Radoje Stojisic
+- Emilie Laffray
+- Grant Slater
+- Jon Burgess
+- Paul Norman
+- Tom Hughes
+- Hrvoje Bogner
+- Radoje Stojisic
 
 Former members:
 
-* Matt Amos
-* Sarah Hoffmann
-* Brian DeRocher
-* Andy Allan
+- Matt Amos
+- Sarah Hoffmann
+- Brian DeRocher
+- Andy Allan
 
 # Join Us!
 

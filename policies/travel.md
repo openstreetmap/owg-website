@@ -1,6 +1,6 @@
 ---
 title: Operations Working Group Travel Policy
-permalink: /policies/sysadmin-membership/
+permalink: /policies/travel/
 ---
 
 # {{ page.title }}

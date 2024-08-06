@@ -61,6 +61,6 @@ OWG is a volunteer group, and we are always keen to find new members. We are par
 
 # Contact
 
-The OSM Operations team are on Twitter: [@OSM_Tech](https://twitter.com/osm_tech) or Mastodon: <a href="https://en.osm.town/@osm_tech" rel="me">@OSM_Tech</a>
+The OSM Operations team are on Mastodon: <a href="https://en.osm.town/@osm_tech" rel="me">@OSM_Tech</a>
 
 You can get in touch with the whole team at: [operations@osmfoundation.org](mailto:operations@osmfoundation.org)

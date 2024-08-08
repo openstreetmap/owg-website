@@ -1,4 +1,4 @@
-FROM docker.io/library/ruby:3.1 as build
+FROM docker.io/library/ruby:3.1 AS build
 
 # Add Gem build requirements
 RUN apt-get update && apt-get install -y \

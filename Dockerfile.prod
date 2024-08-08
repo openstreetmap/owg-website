@@ -1,7 +1,7 @@
 # This file is used if building for Production environments
 # It uses a multi-stage build to run jekyll to populate an nginx container
 
-FROM docker.io/library/ruby:3.1 as build
+FROM docker.io/library/ruby:3.1 AS build
 
 # Add Gem build requirements
 RUN apt-get update && apt-get install -y \
@@ -34,7 +34,7 @@ RUN bundle exec jekyll build --verbose
 
 #-------------------------------------------------
 # https://github.com/nginxinc/docker-nginx-unprivileged
-FROM ghcr.io/nginxinc/nginx-unprivileged:stable-alpine as webserver
+FROM ghcr.io/nginxinc/nginx-unprivileged:stable-alpine AS webserver
 
 RUN echo "absolute_redirect off;" >/etc/nginx/conf.d/no-absolute_redirect.conf
 RUN echo "gzip_static on; gzip_proxied any;" >/etc/nginx/conf.d/gzip_static.conf

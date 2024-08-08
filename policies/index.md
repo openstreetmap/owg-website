@@ -29,3 +29,4 @@ Our internal policies govern the way that OWG operates:
 * [Hosting Provider Credit Policy]({{ site.baseurl }}/policies/hosting/)
 * [Service Classification Policy]({{ site.baseurl }}/policies/classification/)
 * [Operations Working Group Travel Policy]({{ site.baseurl }}/policies/travel/)
+* [New Services Policy]({{ site.baseurl }}/policies/new-services/)

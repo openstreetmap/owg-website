@@ -7,6 +7,6 @@ permalink: /policies/new-services/
 
 DRAFT.
 
-* Launch schedule should agreed ahead of time with the Operations team.
+* Launch schedule should be agreed ahead of time with the Operations team.
 * Operations team require a 7 day window for us to "production" deploy, complex sites may require additional time.
 * Communicate to the Ops Group, not individuals.

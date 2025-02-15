@@ -23,7 +23,7 @@ title: Post-Mortem - Network Outage Affecting OpenStreetMap.org - 15 December 20
 - HE.net service was fully restored on 18 December 2024 at 00:29, at which point all usual routes and services returned to normal.
 
 **Root Cause:**
-- An unanticipated failure of HE.net routing equipment in Amsterdam led to a network blackout. The routing hardware had to be replaced, and this process involved them shipping new equipment from California. During this time, OpenStreetMap.org was exposed to their single point of failure with no direct failover ISP in place.
+- An unanticipated failure of HE.net routing equipment in Amsterdam led to a network blackout of both of OpenStreetMap's redundant fibre Internet connections. HE.net's routing hardware had to be replaced, and this process involved them shipping new equipment from California. During this time, OpenStreetMap.org was exposed to their single point of failure with no direct failover ISP in place.
 
 ---
 
@@ -32,7 +32,7 @@ title: Post-Mortem - Network Outage Affecting OpenStreetMap.org - 15 December 20
 Below is a timeline of the incident:
 
 1. **15 December 2024, 03:53 (UTC) – Outage Begins**
-   - HE.net suffers a routing equipment failure in Amsterdam, causing OpenStreetMap.org to become unreachable.
+   - HE.net suffers a routing equipment failure in Amsterdam, causing OpenStreetMap.org to become unreachable. Both of OpenStreetMap's redundant diverse fibre links to HE.net were offline due the failure of the HE.net's equipment.
 
 2. **15 December 2024, 04:01 – Initial Detection**
    - StatusCake monitoring tools detect the outage and send SMS alerts.
@@ -169,7 +169,7 @@ Below is a timeline of the incident:
    - **Description:** The Raspberry Pi 4 and 4G modem used for out-of-band access. The out-of-band system should be pre-configured to be able to be used as a manual fallback uplink in the event of an ISP outage. The link would be used for server access and syncing the Postgres replication data to the secondary site. The out-of-band hardware should be upgraded to ensure resilience and redundancy. https://github.com/openstreetmap/operations/issues/1197
 
 6. **Document Outage Communication Procedures**
-   - **Description:** A document should be created to outline the parties and their responsibilities in communicating outages. The document should list the recommended communication channels.
+   - **Description:** A document should be created to outline named groups and their responsibilities in communicating outages. The document should list the recommended communication channels. The Operations Team will delegate the communication and to allow them to focus on remediating the outage.
 
 7. **Investigate possible to change OpenStreetMap.org Authentication when Database is Read-Only**
    - **Description:** The OpenStreetMap.org "rails-port" maintainers should investigate if it is possible and practical to de-couple the OAuth authentication to allow the authentication to continue to function for third parties during times when the site is disrupted.

@@ -1,5 +1,5 @@
 ---
-title: Post-Mortem: Network Outage Affecting OpenStreetMap.org - 15 December 2024
+title: Post-Mortem - Network Outage Affecting OpenStreetMap.org - 15 December 2024
 ---
 
 # Post-Mortem: Network Outage Affecting OpenStreetMap.org - 15 December 2024

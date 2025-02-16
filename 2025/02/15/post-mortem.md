@@ -171,7 +171,7 @@ Below is a timeline of the incident:
    - **Description:** The Raspberry Pi 4 and 4G modem used for out-of-band access. The out-of-band system should be pre-configured to be able to be used as a manual fallback uplink in the event of an ISP outage. The link would be used for server access and syncing the Postgres replication data to the secondary site. The out-of-band hardware should be upgraded to ensure resilience and redundancy. https://github.com/openstreetmap/operations/issues/1197
 
 6. **Document Outage Communication Procedures**
-   - **Description:** A document should be created to outline named groups and their responsibilities in communicating outages. The document should list the recommended communication channels. The Operations Team will delegate the communication and to allow them to focus on remediating the outage.
+   - **Description:** A document should be created to outline stakeholders and their responsibilities in communicating outages. The document should list the recommended communication channels. The Operations Team will delegate the communication to allow them to focus on remediating the outage.
 
 7. **Investigate possible to change OpenStreetMap.org Authentication when Database is Read-Only**
    - **Description:** The OpenStreetMap.org "rails-port" maintainers should investigate if it is possible and practical to de-couple the OAuth service to allow authentication to continue to function for third parties during times when the site is disrupted.

@@ -4,6 +4,8 @@ title: Post-Mortem - Network Outage Affecting OpenStreetMap.org - 15 December 20
 
 # Post-Mortem: Network Outage Affecting OpenStreetMap.org - 15 December 2024
 
+All times are provided in Coordinated Universal Time (UTC).
+
 ## 1. Summary
 
 - **Outage Start (UTC):** 15 December 2024, 03:53
@@ -63,15 +65,15 @@ Below is a timeline of the incident:
 9. **15 December 2024, 11:12 & Ongoing – Additional Enquiries**
    - OSM Operations team continues to request updates from HE.net at regular intervals, but no ETA is provided.
 
-10. **16 December 2024, 10:11 - Operations Team Prepare Emergency Full Failover Procedure Documention**
-    - Document the required steps/procedure to fully failover to Dublin (Postgres & osmdbt)
+10. **16 December 2024, 10:11 - Operations Team Prepare Emergency Full Failover Procedure Documentation**
+    - The required steps/procedure to fully failover to Dublin (Postgres & osmdbt) are documented.
 
 11. **16 December 2024, 11:55 - Operations Team Decision to postpone the Emergency Full Failover**
     - OSM Operations team decide to wait for restoration of Amsterdam connectivity instead of Emergency Full Failover.
-    - Communicate the expected ETA to full restoration of services with the OpenStreetMap Communication Working Group, OSMF Board and wider OpenStreetMap community (Announcement Mailinglist, Talk Mailing List, [Mastodon](https://en.osm.town/@osm_tech), [Community Forum](https://community.openstreetmap.org/))
+    - The expected ETA to full restoration of services is communicated with the OpenStreetMap Communication Working Group, OSMF Board and wider OpenStreetMap community ([Announcement Mailinglist](https://lists.openstreetmap.org/pipermail/announce/2024-December/000120.html), [Talk Mailing List](https://lists.openstreetmap.org/pipermail/talk/2024-December/088626.html), [Mastodon](https://en.osm.town/@osm_tech), [Community Forum](https://community.openstreetmap.org/)).
 
 12. **16 December 2024 - Escalation of Equinix Internet connectivity installations.**
-    - Equinix Teams kindly escalated the installations Equinix Internet connectivity in Amsterdam and Dublin.
+    - Equinix Teams kindly escalates the Equinix Internet connectivity installations in Amsterdam and Dublin.
 
 13. **16 December 2024 - Testing new Equinix Internet connectivity in Dublin**
     - Fibre Light and Routing Test
@@ -132,7 +134,7 @@ Below is a timeline of the incident:
 
 1. **Single Point of Failure (SPOF) and Redundancy**
    - Relying on HE.net alone exposed the Amsterdam servers to a single point of failure.
-   - In future, we will maintain multiple upstream providers to eliminate critical SPOFs.
+   - In the future, we will maintain multiple upstream providers to eliminate critical SPOFs.
 
 2. **Out-of-Band access critical**
    - Having a 4G backup link proved invaluable. Expanding the reliability and capability of this backup link to allow data synchronisation.
@@ -172,7 +174,7 @@ Below is a timeline of the incident:
    - **Description:** A document should be created to outline named groups and their responsibilities in communicating outages. The document should list the recommended communication channels. The Operations Team will delegate the communication and to allow them to focus on remediating the outage.
 
 7. **Investigate possible to change OpenStreetMap.org Authentication when Database is Read-Only**
-   - **Description:** The OpenStreetMap.org "rails-port" maintainers should investigate if it is possible and practical to de-couple the OAuth authentication to allow the authentication to continue to function for third parties during times when the site is disrupted.
+   - **Description:** The OpenStreetMap.org "rails-port" maintainers should investigate if it is possible and practical to de-couple the OAuth service to allow authentication to continue to function for third parties during times when the site is disrupted.
 
 ---
 
@@ -180,9 +182,9 @@ Below is a timeline of the incident:
 
 This outage emphasised the importance of robust network redundancy and vendor reliability. By investing in multiple ISPs, improving monitoring and alerting, and refining both backup and communication procedures, OpenStreetMap can continue to provide a highly available service to our global community. The outlined action items will help to address the weaknesses exposed by this incident and strengthen OpenStreetMap.org against similar disruptions in the future.
 
-## 9. Thank you to all those that helped
+## 9. Thank you
 
-We very generously received support and assistance from many people around the world.
+Thank you to all those that helped. We very generously received support and assistance from many people around the world.
 
 - Equinix Team: Thank you for your help getting the new connection provisioned and installed quickly.
 - Operations Team: Thank you to Tom, Paul, Guillaume and others who helped recover from the outage.

@@ -65,3 +65,13 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      # Delete old container package versions
+      # https://github.com/actions/delete-package-versions
+      - uses: actions/delete-package-versions@v5
+        if: ${{ github.event_name != 'pull_request' }}
+        with:
+          package-name: ${{ github.event.repository.name }}
+          package-type: container
+          min-versions-to-keep: 5
+          delete-only-untagged-versions: true

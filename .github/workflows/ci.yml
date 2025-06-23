@@ -23,3 +23,5 @@ concurrency:
 jobs:
   container-build:
     uses: openstreetmap/github-shared-workflows/.github/workflows/container-build-publish.yml@main
+    with:
+      dockerfile: Dockerfile.prod

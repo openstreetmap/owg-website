@@ -1,7 +1,7 @@
 # This file is used if building for Production environments
 # It uses a multi-stage build to run jekyll to populate an nginx container
 
-FROM docker.io/library/ruby:3.1 AS build
+FROM ghcr.io/ruby/ruby:3.1 AS build
 
 # Add Gem build requirements
 RUN apt-get update && apt-get install -y \

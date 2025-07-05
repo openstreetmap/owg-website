@@ -4,7 +4,7 @@ title: OSMF Operations Working Group
 
 # OSMF Operations Working Group
 
-We're the Operations Working Group (OWG) for the OpenStreetMap Foundation. The OWG is responsible for proposing the budget for, and running of the servers owned by the [OpenStreetMap Foundation](https://wiki.osmfoundation.org/)
+We're the [Operations Working Group](https://osmfoundation.org/wiki/Operations_Working_Group) (OWG) for the OpenStreetMap Foundation. The OWG is responsible for proposing the budget for, and running of the servers owned by the [OpenStreetMap Foundation](https://wiki.osmfoundation.org/)
 
 The key priority for this group is ensuring the operation and smooth running of the XML editing API and data distribution services (planet files and diff updates). Secondary priorities include the operation of the other OSMF servers.
 
@@ -20,13 +20,13 @@ It does not concern itself with:
 * Authoring software to run on the services. This is left to the development community
 * Day-to-day running of the servers. This is the remit of the Sysadmins group
 
-We run a [public issue tracker](https://github.com/openstreetmap/operations/issues) at GitHub for our tasks.
+We run a public tracker for our tasks at https://github.com/openstreetmap/operations/issues.
 
 # Infrastructure Details and Status
 
-Details on OSMF servers and statistics can be found at [OSMF Server Info](https://hardware.openstreetmap.org/).
+Details on OSMF servers and statistics can be found at https://hardware.openstreetmap.org/.
 
-[OpenStreetMap Server Status](https://uptime.openstreetmap.org/) gives uptime details by service (note that it may not include all servers and services).
+https://uptime.openstreetmap.org/ gives uptime details by service (note that it may not include all servers and services).
 
 # Latest Reports
 
@@ -61,6 +61,8 @@ OWG is a volunteer group, and we are always keen to find new members. We are par
 
 # Contact
 
-The OSM Operations team are on Mastodon: <a href="https://en.osm.town/@osm_tech" rel="me">@OSM_Tech</a>
+Join the chat on [Matrix](https://matrix.to/#/#_oftc_#osmf-operations:matrix.org)
+
+The OSM Operations team are on Mastodon: [@OSM_Tech](https://en.osm.town/@OSM_Tech)
 
 You can get in touch with the whole team at: [operations@osmfoundation.org](mailto:operations@osmfoundation.org)

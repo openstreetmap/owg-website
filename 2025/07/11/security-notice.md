@@ -10,6 +10,6 @@ Unfortunately, [the fix breaks some Web applications](https://community.openstre
 
 * [HOT Tasking Manager](https://github.com/hotosm/tasking-manager/pull/6933): upgrade to [v5.0.6](https://github.com/hotosm/tasking-manager/releases/tag/v5.0.6) or later
 * [osm-api-js](https://github.com/osmlab/osm-api-js/pull/24): upgrade to v3.0.0 or later then [update land.html](https://www.npmjs.com/package/osm-api#1-popup)
-* [osm-auth](https://github.com/osmlab/osm-auth/pull/138)
+* [osm-auth](https://github.com/osmlab/osm-auth/pull/138): upgrade to v3.0.0 or later then [update land.html](https://github.com/osmlab/osm-auth/blob/v3.0.0/land.html)
 
 Thanks to Sam Jose for reporting the security vulnerability. As a reminder, if you find any security issue in software or services on openstreetmap.org, please follow the Operations Working Group’s [security reporting policy](https://operations.osmfoundation.org/policies/security/).

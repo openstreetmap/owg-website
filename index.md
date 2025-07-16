@@ -20,13 +20,13 @@ It does not concern itself with:
 * Authoring software to run on the services. This is left to the development community
 * Day-to-day running of the servers. This is the remit of the Sysadmins group
 
-We run a public tracker for our tasks at https://github.com/openstreetmap/operations/issues.
+We run a [public issue tracker](https://github.com/openstreetmap/operations/issues) at GitHub for our tasks.
 
 # Infrastructure Details and Status
 
-Details on OSMF servers and statistics can be found at https://hardware.openstreetmap.org/.
+Details on OSMF servers and statistics can be found at [OSMF Server Info](https://hardware.openstreetmap.org/).
 
-https://uptime.openstreetmap.org/ gives uptime details by service (note that it may not include all servers and services).
+[OpenStreetMap Server Status](https://uptime.openstreetmap.org/) gives uptime details by service (note that it may not include all servers and services).
 
 # Latest Reports
 
@@ -40,29 +40,31 @@ For a full list of reports, please see our [Reports Archive]({{ site.baseurl }}/
 
 # Members
 
-* Emilie Laffray
-* Grant Slater
-* Jon Burgess
-* Paul Norman
 * Tom Hughes
+* Grant Slater
+* Paul Norman
 * Hrvoje Bogner
-* Radoje Stojisic
 
-Former members:
+Former members
 
-* Matt Amos
 * Sarah Hoffmann
+* Matt Amos
 * Brian DeRocher
 * Andy Allan
+* Emilie Laffray
+* Radoje Stojisic
+* Jon Burgess
 
 # Join Us!
 
 OWG is a volunteer group, and we are always keen to find new members. We are particularly looking for people who can analyse our infrastructure, make plans, forecast future hardware needs, draw up budgets and that sort of thing. This does involve a certain level of technical expertise but it's not writing code, for example, and OWG membership doesn't grant access to any of the servers - that's for our Sysadmins. If you'd like to join us, have a read of our [membership policy]({{ site.baseurl }}/policies/owg-membership/), and please get in touch!
 
+Some tasks welcome beginner contributions. They are labelled as [help-wanted](https://github.com/openstreetmap/operations/issues?q=is%3Aissue%20state%3Aopen%20label%3Ahelp-wanted) on the issue tracker.
+
 # Contact
 
 Join the chat on [Matrix](https://matrix.to/#/#_oftc_#osmf-operations:matrix.org)
 
-The OSM Operations team are on Mastodon: [@OSM_Tech](https://en.osm.town/@OSM_Tech)
+The OSM Operations team are on Mastodon: <a href="https://en.osm.town/@osm_tech" rel="me">@OSM_Tech</a>
 
 You can get in touch with the whole team at: [operations@osmfoundation.org](mailto:operations@osmfoundation.org)

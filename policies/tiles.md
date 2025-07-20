@@ -9,13 +9,11 @@ We are in principle happy for our map tiles to be used by external users for cre
 
 However, **OpenStreetMap's own servers are run entirely on donated resources.** They have strictly limited capacity. Heavy use of OSM tiles adversely affects people's ability to edit the map, and is an abuse of the individual donations and sponsorship which provide hardware and bandwidth. As a result, we require that users of the tiles abide by this tile usage policy.
 
-**OpenStreetMap data is [free for everyone to use](https://wiki.openstreetmap.org/wiki/OpenStreetMap_License). Our tile servers are not.**
+**OpenStreetMap data is [free for everyone to use](https://www.openstreetmap.org/copyright). Our tile servers are not.**
 
-Below are the minimum requirements that users of tile.openstreetmap.org must adhere to. These may change in future, depending on available resources. Should any users or patterns of usage nevertheless cause problems to the service, access may still be blocked without prior notice. We will try to contact relevant parties if possible, but cannot guarantee this.
+Below are the minimum requirements that users of tile.openstreetmap.org must adhere to. These may change in future, depending on available resources. Should any users or patterns of usage nevertheless cause problems to the service, access may be [blocked](https://wiki.openstreetmap.org/wiki/Blocked_Tiles) without prior notice. We will try to contact relevant parties if possible, but cannot guarantee this. In any case, you can still get OSM-derived map tiles [elsewhere](https://wiki.openstreetmap.org/wiki/Tiles#Tile_providers).
 
 Although our map tiles are generally very reliable, their availability to others is on a best effort basis and we offer no SLA or guarantees.
-
-Because OpenStreetMap data is free, many other organisations provide map tiles made from OSM data. If your project doesn't meet our requirements, you can get OSM-derived map tiles elsewhere.
 
 Use of any OSMF provided service is further governed by the [OSMF Terms of Use](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
 

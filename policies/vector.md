@@ -21,7 +21,7 @@ Use of any OSMF provided service is further governed by the [OSMF Terms of Use](
 
 ## Usage
 
-The correct URL for the tiles is `https://vector.openstreetmap.org/$VERSION/{z}/{x}/{y}.mvt` or the tilejson at `https://vector.openstreetmap.org/$VERSION/tilejson.json`. The style is available at `https://vector.openstreetmap.org/demo/shortbread/colorful.json`. We are unable to offer support on how to make your preferred map library work with this URL and recommend you consult its documentation.
+The correct URL for the tiles is `https://vector.openstreetmap.org/$VERSION/{z}/{x}/{y}.mvt` or the tilejson at `https://vector.openstreetmap.org/$VERSION/tilejson.json`. The style is available at `https://vector.openstreetmap.org/demo/shortbread/colorful.json`. We are unable to offer support on how to make your preferred map library work with these URLs and recommend you consult its documentation.
 
 ## Requirements
 

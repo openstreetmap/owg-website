@@ -1,5 +1,5 @@
 ---
-title: Security Notice: openstreetmap-website ecurity fix; developer action required
+title: Security Notice - openstreetmap-website security fix; developer action required
 ---
 
 # openstreetmap-website security fix; developer action required

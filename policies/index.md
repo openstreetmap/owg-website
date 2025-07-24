@@ -9,6 +9,7 @@ title: OWG Policies
 OWG has responsibility for various policies that govern external use of OSMF services:
 
 * [Tile Usage Policy]({{ site.baseurl }}/policies/tiles/)
+* [Vector Tile Usage Policy]({{ site.baseurl }}/policies/vector/)
 * [Nominatim Usage Policy]({{ site.baseurl }}/policies/nominatim/)
 * [API Usage Policy]({{ site.baseurl }}/policies/api/)
 * [Security Reporting Policy]({{ site.baseurl }}/policies/security/)

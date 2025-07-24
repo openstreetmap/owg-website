@@ -1,4 +1,5 @@
-name: owg-log
+name: OSMF Operations Working Group
+title: OSMF Operations Working Group
 markdown: kramdown
 highlighter: rouge
 baseurl:

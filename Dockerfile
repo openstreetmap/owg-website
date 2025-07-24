@@ -1,4 +1,4 @@
-FROM ghcr.io/ruby/ruby:3.1 AS build
+FROM ghcr.io/ruby/ruby:3.3 AS build
 
 # Add Gem build requirements
 RUN apt-get update && apt-get install -y \
@@ -13,7 +13,7 @@ WORKDIR /app
 ADD Gemfile* /app/
 
 # Install Gems
-RUN gem install bundler -v 2.4.17 \
+RUN gem install bundler -v 2.6.9 \
     && bundle config build.nokogiri --use-system-libraries \
     && bundle config --global jobs $(nproc) \
     && bundle install

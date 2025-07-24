@@ -63,8 +63,8 @@ Some tasks welcome beginner contributions. They are labelled as [help-wanted](ht
 
 # Contact
 
-Join the chat on [Matrix](https://matrix.to/#/#_oftc_#osmf-operations:matrix.org)
+Join the chat on [Matrix](https://matrix.to/#/#_oftc_#osmf-operations:matrix.org) or [IRC](https://irc.openstreetmap.org/) (#osmf-operations)
 
-The OSM Operations team are on Mastodon: <a href="https://en.osm.town/@osm_tech" rel="me">@OSM_Tech</a>
+The OSM Operations team are on Mastodon: <a href="https://en.osm.town/@osm_tech" rel="me">@osm_tech</a>
 
 You can get in touch with the whole team at: [operations@osmfoundation.org](mailto:operations@osmfoundation.org)

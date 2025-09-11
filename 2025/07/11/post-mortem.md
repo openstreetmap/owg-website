@@ -76,7 +76,7 @@ The OpenStreetMap.org planet replication diffs could not be generated and subseq
 During the OpenStreetMap.org maintenance window (~25 minutes) the OpenStreetMap.org website and mapping API was read-only. The map edit API did not allow any map changes during this period.
 
 ## Root Cause
-An unidentified condition in PostgreSQL replication caused the SQL query used by `osmdbt-get-log` to repeatedly fail (`ERROR:  invalid memory alloc request size 1243650064`) (See #Appendices) when `osmdbt-get-log` was generating the log data that is required by `osmdbt-create-diff`.
+An unidentified condition in PostgreSQL replication caused the SQL query used by `osmdbt-get-log` to repeatedly fail (`ERROR:  invalid memory alloc request size 1243650064`) (See [Appendices](post-mortem.md#Appendices)) when `osmdbt-get-log` was generating the log data that is required by `osmdbt-create-diff`.
 
 ## Detection
 

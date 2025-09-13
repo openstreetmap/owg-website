@@ -33,8 +33,8 @@ ENV JEKYLL_ENV=production
 RUN bundle exec jekyll build --verbose
 
 #-------------------------------------------------
-# https://github.com/nginxinc/docker-nginx-unprivileged
-FROM ghcr.io/nginxinc/nginx-unprivileged:stable-alpine AS webserver
+# https://github.com/nginx/docker-nginx-unprivileged
+FROM ghcr.io/nginx/nginx-unprivileged:stable AS webserver
 
 RUN echo "absolute_redirect off;" >/etc/nginx/conf.d/no-absolute_redirect.conf
 RUN echo "gzip_static on; gzip_proxied any;" >/etc/nginx/conf.d/gzip_static.conf

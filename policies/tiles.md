@@ -175,4 +175,4 @@ This policy applies to the **Standard** ("OpenStreetMap Carto") **raster** tiles
 
 It **does not** apply to other layers shown on the OpenStreetMap.org homepage (e.g. OpenCycleMap or other third-party tiles). Those layers may have their own usage policies, please contact the relevant projects directly if you wish to use their tiles.
 
-**OpenStreetMap's Vector Tiles served by **`vector.openstreetmap.org`** is a separate service with its own usage policy:** [https://operations.osmfoundation.org/policies/vector/](https://operations.osmfoundation.org/policies/vector/)
+OpenStreetMap's Vector Tiles served by **`vector.openstreetmap.org`** is a separate service with its own usage policy: [https://operations.osmfoundation.org/policies/vector/](https://operations.osmfoundation.org/policies/vector/)

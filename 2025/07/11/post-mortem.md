@@ -44,7 +44,7 @@ I've inched it forward to the point where even fetching --max-changes=1 trigegrs
 * 26 June 2025 06:58 onward - osmdb developer (Jochen) responds. Discussion around potential cause. Investigation if there was a huge set of OpenStreetMap map changes (eg: 15 million+ node changes) which would have overwelmed the postgresql internal replication logs which are used by osmdbt.
 * 26 June 2025 08:33 - GitHub OSM Ops Issue opened - https://github.com/openstreetmap/operations/issues/1253
 * 26 June 2025 08:57 - Tom (Ops) raises question of workaround potential with Jochen (osmdbt developer)
-* 26 June 2025 09:19 - Mastodon - Announce Replication Diffs not updating - https://en.osm.town/@osm_tech/114748919269472963
+* 26 June 2025 09:19 - Announce on Mastodon - Replication Diffs not updating - https://en.osm.town/@osm_tech/114748919269472963
 * 26 June 2025 09:41 onward - Jochen (osmdbt developer) responds with discussion of steps on how to run osmdbt using fakelog (osmdbt component) as a workaround. Tom (Ops) starts dry-run testing, follow up discussion clarifying understanding of fakelog output and the requirements with Jochen.
 * 26 June 2025 10:13 - Ops discussion (irc #osmf-operations) that a OpenStreetMap.org read-only maintenance window will be required to avoid edits during the window to suppress edits while fakelog is manually used to produce OpenStreetMap replication diffs. Proposal of 1 hour emergency maintenance window.
 * 26 June 2025 10:13 - Confirmation that weekly PostgreSQL database backup has already finished (at 25 June 2025 20:17:55)
@@ -52,8 +52,8 @@ I've inched it forward to the point where even fetching --max-changes=1 trigegrs
 * 26 June 2025 12:43 - Announce on Mastodon - Replication diff recovery still in progress - https://en.osm.town/@osm_tech/114749724057778146
 * 26 June 2025 12:54 - Ops confirmation (irc #osmf-operations) that everything is ready for the maintenance window to allow for the manual osmdbt run using fakelog. Ops agree immediate start of the 1 hour OpenStreetMap.org read-only maintenace window.
 * 26 June 2025 12:56 - OpenStreetMap.org - Read-Only Maintenance Starts (~ few minutes to go live)
-* 26 June 2025 12:59 - Announce on Mastodon - Maintenance Outage Annoucement - https://en.osm.town/@osm_tech/114749783705346288
-* 26 June 2025 13:03 - Announce Mailing List - Maintenance Outage Annoucement - https://lists.openstreetmap.org/pipermail/announce/2025-June/000121.html
+* 26 June 2025 12:59 - Announce on Mastodon - Maintenance Outage Announcement - https://en.osm.town/@osm_tech/114749783705346288
+* 26 June 2025 13:03 - Announce on Mailing List - Maintenance Outage Announcement - https://lists.openstreetmap.org/pipermail/announce/2025-June/000121.html
 * 26 June 2025 13:13:47 - osmdbt manual run with fakelog, success - replication/minute/006/658/640.gz (first)
 * 26 June 2025 13:14:17 - osmdbt manual run with fakelog, success - replication/minute/006/658/641.gz
 ...
@@ -62,9 +62,9 @@ I've inched it forward to the point where even fetching --max-changes=1 trigegrs
 * **26 June 2025 13:21:10** - osmdbt timer start minutely diff - replication/minute/006/658/674.osc.gz (timer restarted)
 * 26 June 2025 13:22 - OpenStreetMap.org - Read-Only Maintenace Ends (~ few minutes to go live) (~25mins OSM.org read-only)
 * 26 June 2025 13:22:57 - osmdbt timer start minutely diff - replication/minute/006/658/675.osc.gz (normal)
-* 26 June 2025 13:29 - Announce Mastodon - Back Online - https://en.osm.town/@osm_tech/114749901654577418
-* 26 June 2025 13:30 - Announce Mastodon - Diffs Back Online - https://en.osm.town/@osm_tech/114749909231464533
-* 26 June 2025 13:33 - Announce Mailing List - Maintenance Complete Annoucement - https://lists.openstreetmap.org/pipermail/announce/2025-June/000122.html
+* 26 June 2025 13:29 - Announce on Mastodon - Back Online - https://en.osm.town/@osm_tech/114749901654577418
+* 26 June 2025 13:30 - Announce on Mastodon - Diffs Back Online - https://en.osm.town/@osm_tech/114749909231464533
+* 26 June 2025 13:33 - Announce on Mailing List - Maintenance Complete Announcement - https://lists.openstreetmap.org/pipermail/announce/2025-June/000122.html
 * 26 June 2025 13:41 - Alertmanager alerts cleared message to Ops
 * 26 June 2025 18:00 - Ops Fortnightly call with Jochen joining to discuss osmdbt failure. PostgreSQL cause? osmdbt usability improvement? Switching osmdbt custom postgresql plugin to using built in pgout. Minutes will be published on 10 July 2025.
 * 28 Jun 2025 00:14:59 - planetdump generation finishes (normal)

@@ -3,7 +3,7 @@ title: Service Classification Policy
 permalink: /policies/classification/
 ---
 
-The Operations Working Group internally classifies services it runs as primary, secondary, and tertiary. This allows us to prioritise when budgeting and planning systems.This policy sets out grounds for classification and a current list of each service.
+The Operations Working Group internally classifies services it runs as primary, secondary, and tertiary. This allows us to prioritise when budgeting and planning systems. This policy sets out grounds for classification and a current list of each service.
 
 ## Primary services
 Our primary services are the editing API and raw OSM data downloads. Any internal services required to enable these are therefore also considered primary services.
@@ -20,13 +20,13 @@ Secondary services are services which are used for editing but not a requirement
 ### Current secondary services
 * "Standard" rendering (tile.openstreetmap.org)
 * Nominatim (nominatim.openstreetmap.org)
-* OpenStreetMap Wiki (wiki.openstretmap.org)
+* OpenStreetMap Wiki (wiki.openstreetmap.org)
 * Portions of the website that are not primary services (e.g. diaries or GPX)
 
 ## Tertiary services
 ### Current tertiary services
-* Help (help.openstretmap.org)
-* Official Blog (blog.openstreetmap.org)
+* Help (help.openstreetmap.org)
+* Official blog (blog.openstreetmap.org)
 * OSMF website (www.osmfoundation.org)
 * Munin (munin.openstreetmap.org)
 * Mailing Lists (lists.openstreetmap.org)
@@ -36,9 +36,9 @@ Secondary services are services which are used for editing but not a requirement
 * IRC gateway (irc.openstreetmap.org)
 * Dev server (toolserver) (dev.openstreetmap.org)
 * Switch2OSM (switch2osm.org)
-* OSMF hosted imagery
+* OSMF-hosted imagery server
 * Taginfo (taginfo.openstreetmap.org)
-* Forum (forum.openstreetmap.org)
+* Forum (community.openstreetmap.org)
 
 * Internal OSMF wikis
 * OTRS

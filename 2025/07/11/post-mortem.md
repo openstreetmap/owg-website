@@ -1,5 +1,7 @@
 ---
 title: Post-Mortem - Planet replication diff outage - 25 June 2025
+post_mortem: true
+date: 2025-07-11
 ---
 
 # Post-mortem - Planet replication diff outage 25 June 2025 21:33 until 26 June 2025 13:22 (16 hours)
@@ -11,7 +13,7 @@ Replication diffs are used by other OpenStreetMap.org and third-party services t
 
 ## Timeline of Events
 
-* 30 May 2025 16:53 - postgresql upgraded to 15.13-1.pgdg22.04+1
+* 30 May 2025 16:53 - PostgreSQL upgraded to 15.13-1.pgdg22.04+1
 * 2 June 2025 00:00:01 - Weekly pg_dump script start (timer, normal)
 * 4 June 2025 21:54:24 - Weekly pg_dump script finishes (normal)
 ...
@@ -41,16 +43,16 @@ we have a problem with osmdbt - it is reporting "ERROR: invalid memory alloc req
 I've inched it forward to the point where even fetching --max-changes=1 trigegrs the error
 ```
 
-* 26 June 2025 06:58 onward - osmdb developer (Jochen) responds. Discussion around potential cause. Investigation if there was a huge set of OpenStreetMap map changes (eg: 15 million+ node changes) which would have overwelmed the postgresql internal replication logs which are used by osmdbt.
+* 26 June 2025 06:58 onward - osmdbt developer (Jochen) responds. Discussion around potential cause. Investigation if there was a huge set of OpenStreetMap map changes (e.g. 15 million+ node changes) which would have overwhelmed the PostgreSQL internal replication logs which are used by osmdbt.
 * 26 June 2025 08:33 - GitHub OSM Ops Issue opened - https://github.com/openstreetmap/operations/issues/1253
-* 26 June 2025 08:57 - Tom (Ops) raises question of workaround potential with Jochen (osmdbt developer)
+* 26 June 2025 08:57 - Tom (Ops) raises question of a potential workaround with Jochen (osmdbt developer)
 * 26 June 2025 09:19 - Announce on Mastodon - Replication Diffs not updating - https://en.osm.town/@osm_tech/114748919269472963
-* 26 June 2025 09:41 onward - Jochen (osmdbt developer) responds with discussion of steps on how to run osmdbt using fakelog (osmdbt component) as a workaround. Tom (Ops) starts dry-run testing, follow up discussion clarifying understanding of fakelog output and the requirements with Jochen.
-* 26 June 2025 10:13 - Ops discussion (irc #osmf-operations) that a OpenStreetMap.org read-only maintenance window will be required to avoid edits during the window to suppress edits while fakelog is manually used to produce OpenStreetMap replication diffs. Proposal of 1 hour emergency maintenance window.
+* 26 June 2025 09:41 onward - Jochen (osmdbt developer) responds with discussion of steps on how to run osmdbt using fakelog (osmdbt component) as a workaround. Tom (Ops) starts dry-run testing, follow-up discussion clarifying understanding of fakelog output and the requirements with Jochen.
+* 26 June 2025 10:13 - Ops discussion (irc #osmf-operations) that an OpenStreetMap.org read-only maintenance window will be required to suppress edits while fakelog is manually used to produce OpenStreetMap replication diffs. Proposal of 1 hour emergency maintenance window.
 * 26 June 2025 10:13 - Confirmation that weekly PostgreSQL database backup has already finished (at 25 June 2025 20:17:55)
 * 26 June 2025 10:27 - Announce on Mastodon - Warning of offline maintenance expected - https://en.osm.town/@osm_tech/114749187128465578
 * 26 June 2025 12:43 - Announce on Mastodon - Replication diff recovery still in progress - https://en.osm.town/@osm_tech/114749724057778146
-* 26 June 2025 12:54 - Ops confirmation (irc #osmf-operations) that everything is ready for the maintenance window to allow for the manual osmdbt run using fakelog. Ops agree immediate start of the 1 hour OpenStreetMap.org read-only maintenace window.
+* 26 June 2025 12:54 - Ops confirmation (irc #osmf-operations) that everything is ready for the maintenance window to allow for the manual osmdbt run using fakelog. Ops agree immediate start of the 1 hour OpenStreetMap.org read-only maintenance window.
 * 26 June 2025 12:56 - OpenStreetMap.org - Read-Only Maintenance Starts (~ few minutes to go live)
 * 26 June 2025 12:59 - Announce on Mastodon - Maintenance Outage Announcement - https://en.osm.town/@osm_tech/114749783705346288
 * 26 June 2025 13:03 - Announce on Mailing List - Maintenance Outage Announcement - https://lists.openstreetmap.org/pipermail/announce/2025-June/000121.html
@@ -60,7 +62,7 @@ I've inched it forward to the point where even fetching --max-changes=1 trigegrs
 * 26 June 2025 13:17:01 - osmdbt manual run with fakelog, success - replication/minute/006/658/672.gz
 * 26 June 2025 13:17:04 - osmdbt manual run with fakelog, success - replication/minute/006/658/673.gz (final)
 * **26 June 2025 13:21:10** - osmdbt timer start minutely diff - replication/minute/006/658/674.osc.gz (timer restarted)
-* 26 June 2025 13:22 - OpenStreetMap.org - Read-Only Maintenace Ends (~ few minutes to go live) (~25mins OSM.org read-only)
+* 26 June 2025 13:22 - OpenStreetMap.org - Read-Only Maintenance Ends (~ few minutes to go live) (~25 mins OSM.org read-only)
 * 26 June 2025 13:22:57 - osmdbt timer start minutely diff - replication/minute/006/658/675.osc.gz (normal)
 * 26 June 2025 13:29 - Announce on Mastodon - Back Online - https://en.osm.town/@osm_tech/114749901654577418
 * 26 June 2025 13:30 - Announce on Mastodon - Diffs Back Online - https://en.osm.town/@osm_tech/114749909231464533
@@ -74,17 +76,18 @@ I've inched it forward to the point where even fetching --max-changes=1 trigegrs
 The OpenStreetMap.org planet replication diffs could not be generated and subsequently published. Downstream (tile.openstreetmap.org, nominatim, overpass) and third-party services were unable to stay up to date with OpenStreetMap.org map edits.
 
 During the OpenStreetMap.org maintenance window (~25 minutes) the OpenStreetMap.org website and mapping API was read-only. The map edit API did not allow any map changes during this period.
+During the OpenStreetMap.org maintenance window (~25 minutes) the OpenStreetMap.org website and mapping API were read-only. The map edit API did not allow any map changes during this period.
 
 ## Root Cause
-An unidentified condition in PostgreSQL replication caused the SQL query used by `osmdbt-get-log` to repeatedly fail (`ERROR:  invalid memory alloc request size 1243650064`) (See [Appendices](post-mortem.md#Appendices)) when `osmdbt-get-log` was generating the log data that is required by `osmdbt-create-diff`.
+An unidentified condition in PostgreSQL replication caused the SQL query used by `osmdbt-get-log` to repeatedly fail (`ERROR:  invalid memory alloc request size 1243650064`) (see [Appendices](#appendices)) when `osmdbt-get-log` was generating the log data that is required by `osmdbt-create-diff`.
 
 ## Detection
 
-Alertmanager sent multiple alerts related to the event. The event did not trigger any pager or SMS based alerts.
+Alertmanager sent multiple alerts related to the event. The event did not trigger any pager or SMS-based alerts.
 
 ## Response
 
-Ops responsed to the issue early on 26 June 2025. An attempt to workaround the issue by modifying the number of changesets dumped per replication diff did not resolve the issue. Ops raised the issue with the Jochen (osmdbt developer) and a path to fixing the issue was worked out.
+Ops responded to the issue early on 26 June 2025. An attempt to work around the issue by modifying the number of changesets dumped per replication diff did not resolve the issue. Ops raised the issue with Jochen (osmdbt developer) and a path to fixing the issue was worked out.
 
 ## Resolution
 
@@ -93,7 +96,7 @@ osmdbt's fakelog tool was manually used by the operations team to skip ahead of 
 ## Follow-up Actions / Remediations
 
 * PostgreSQL upgrade planned (Upgrade to PostgreSQL 17.x)
-* Raise issue with PostgreSQL developers.
+* Raise an issue with PostgreSQL developers.
 
 ## Lessons Learned
 

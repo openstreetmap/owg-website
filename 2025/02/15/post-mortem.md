@@ -1,5 +1,7 @@
 ---
 title: Post-Mortem - Network Outage Affecting OpenStreetMap.org - 15 December 2024
+post_mortem: true
+date: 2025-02-15
 ---
 
 # Post-Mortem: Network Outage Affecting OpenStreetMap.org - 15 December 2024
@@ -11,10 +13,10 @@ All times are provided in Coordinated Universal Time (UTC).
 - **Outage Start (UTC):** 15 December 2024, 03:53
 - **Outage End (UTC):** 18 December 2024, 00:29 (when HE.net restored service)
 - **Partial Restoration:**
-   - 15 December 2024, 11:31: Restore OpenStreetMap.org with map edits disable (read-only) via Dublin site failover
+   - 15 December 2024, 11:31: Restore OpenStreetMap.org with map edits disabled (read-only) via Dublin site failover
    - 17 December 2024, 12:21: Map Edits restored via new Equinix Internet link in Amsterdam
 - **Duration:**
-  - **Dark outage** Complete outage of 8 hours until read-only OpenStreetMap.org enabled.
+  - **Dark outage:** Complete outage of 8 hours until read-only OpenStreetMap.org enabled.
   - **Full outage:** Approximately 56 hours until restoration of map edits.
   - **Total time until HE.net resolved:** About 68 hours.
 
@@ -25,7 +27,7 @@ All times are provided in Coordinated Universal Time (UTC).
 - HE.net service was fully restored on 18 December 2024 at 00:29, at which point all usual routes and services returned to normal.
 
 **Root Cause:**
-- An unanticipated failure of HE.net routing equipment in Amsterdam led to a network blackout of both of OpenStreetMap's redundant fibre Internet connections. HE.net's routing hardware had to be replaced, and this process involved them shipping new equipment from California. During this time, OpenStreetMap.org was exposed to their single point of failure with no direct failover ISP in place.
+- An unanticipated failure of HE.net routing equipment in Amsterdam led to a network blackout of both OpenStreetMap's redundant fibre Internet connections. HE.net's routing hardware had to be replaced, and this process involved them shipping new equipment from California. During this time, OpenStreetMap.org was exposed to a single point of failure with no direct failover ISP in place.
 
 ---
 
@@ -34,7 +36,7 @@ All times are provided in Coordinated Universal Time (UTC).
 Below is a timeline of the incident:
 
 1. **15 December 2024, 03:53 (UTC) – Outage Begins**
-   - HE.net suffers a routing equipment failure in Amsterdam, causing OpenStreetMap.org to become unreachable. Both of OpenStreetMap's redundant diverse fibre links to HE.net were offline due the failure of the HE.net's equipment.
+   - HE.net suffers a routing equipment failure in Amsterdam, causing OpenStreetMap.org to become unreachable. Both of OpenStreetMap's redundant diverse fibre links to HE.net were offline due to the failure of HE.net's equipment.
 
 2. **15 December 2024, 04:01 – Initial Detection**
    - StatusCake monitoring tools detect the outage and send SMS alerts.
@@ -95,10 +97,10 @@ Below is a timeline of the incident:
 
 - **Website and Mapping API:**
   - OpenStreetMap.org’s main website and mapping API were completely offline from 15 December 2024 at 03:53 until the read-only backup went live on 15 December at 11:31.
-  - The read-only instance meant users could view access OpenStreetMap.org but could not make any edits until 17 December 2024 at 12:21.
+   - The read-only instance meant users could view and access OpenStreetMap.org but could not make any edits until 17 December 2024 at 12:21.
 
 - **Authentication Unavailable while read-only:**
-   - OpenStreetMap's OAuth service requires database write to store access tokens. While the website was read-only users were unable to login to OpenStreetMap.org, community.openstreetmap.org, umap, and other services because our OAuth service failed.
+   - OpenStreetMap's OAuth service requires database writes to store access tokens. While the website was read-only, users were unable to log in to OpenStreetMap.org, community.openstreetmap.org, umap, and other services because our OAuth service failed.
 
 - **Other Amsterdam Hosts Services:**
   - The dev server, Taginfo (taginfo.openstreetmap.org), and certain aerial imagery services were unavailable.
@@ -109,7 +111,7 @@ Below is a timeline of the incident:
 ## 4. Root Cause Analysis
 
 - **Primary Cause:**
-  - Failure of HE.net routing equipment in Amsterdam, which was a single point of failure for the Amsterdam servers internet connectivity.
+   - Failure of HE.net routing equipment in Amsterdam, which was a single point of failure for the Amsterdam servers' internet connectivity.
 
 - **Contributing Factors:**
   - Lack of a fully operational second ISP at the time of the outage.
@@ -149,14 +151,14 @@ Below is a timeline of the incident:
    - The incident highlighted the need to refine alerting for upstream connectivity and to unify relevant data from multiple monitoring sources to pinpoint issues faster.
 
 6. **OpenStreetMap Authentication Outage Impact on Other Services**
-   - When OpenStreetMap.org was read-only, users were unable to login to unaffected services (eg: community.openstreetmap.org) because the OpenStreetMap site was unable to save new tokens.
+   - When OpenStreetMap.org was read-only, users were unable to log in to unaffected services (eg: community.openstreetmap.org) because the OpenStreetMap site was unable to save new tokens.
 
 ---
 
 ## 7. Follow-Up Actions & Tasks
 
 1. **Investigate Additional ISP Options**
-   - **Description:** Research potential backup ISPs for the Amsterdam servers, comparing bandwidth, reliability, and costs. Follow up will be held at the [Karlsruhe Hack Weekend - February 2025](https://wiki.openstreetmap.org/wiki/Karlsruhe_Hack_Weekend_February_2025) to discuss practical options including BGP and retaining HE.net as a fallback ISP.
+   - **Description:** Research potential backup ISPs for the Amsterdam servers, comparing bandwidth, reliability, and costs. Follow-up will be held at the [Karlsruhe Hack Weekend - February 2025](https://wiki.openstreetmap.org/wiki/Karlsruhe_Hack_Weekend_February_2025) to discuss practical options including BGP and retaining HE.net as a fallback ISP.
 
 2. **Enhance Monitoring Suite**
    - **Description:** Implement deeper route and latency monitoring to detect ISP issues quickly and create an automated escalation protocol.
@@ -174,7 +176,7 @@ Below is a timeline of the incident:
    - **Description:** A document should be created to outline stakeholders and their responsibilities in communicating outages. The document should list the recommended communication channels. The Operations Team will delegate the communication to allow them to focus on remediating the outage.
 
 7. **Investigate possible to change OpenStreetMap.org Authentication when Database is Read-Only**
-   - **Description:** The OpenStreetMap.org "rails-port" maintainers should investigate if it is possible and practical to de-couple the OAuth service to allow authentication to continue to function for third parties during times when the site is disrupted.
+   - **Description:** The OpenStreetMap.org "rails-port" maintainers should investigate if it is possible and practical to decouple the OAuth service to allow authentication to continue to function for third parties during times when the site is disrupted.
 
 ---
 

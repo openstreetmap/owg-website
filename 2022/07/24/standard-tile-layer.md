@@ -56,7 +56,7 @@ Total customer impact was a 4% failure rate lasting for 2.5 hours.
 * 2022-07-18T08:57:00Z - [OSM_Tech tweet](https://twitter.com/OSM_Tech/status/1548955132011749376) issued about service degredation
 * 2022-07-18T08:59:36Z - Fastly config #309 pushed bringing odin origin in again at minimal load.
 * 2022-07-18T09:08:00Z - Fastly config #310 pushed to make health check more forgiving of down servers, immediately smoothing traffic levels out and reducing error rate.
-* 2022-07-18T09:19:00Z - Fastly provides details on [how to monitor health check status](https://support.fastly.com/hc/en-us/community/posts/360040444872-Monitoring-health-status-from-fastly-health-checks#:~:text=Regarding%20this%20topic%2C%20yes%2C%20we%27re%20aware%20of%20your%20needs%20as%20this%20is%20one%20of%20the%20frequently%20asked%20questions.).
+* 2022-07-18T09:19:00Z - Fastly provides details on [how to monitor health check status](https://web.archive.org/web/20220704160335/https://support.fastly.com/hc/en-us/community/posts/360040444872-Monitoring-health-status-from-fastly-health-checks#:~:text=Regarding%20this%20topic%2C%20yes%2C%20we%27re%20aware%20of%20your%20needs%20as%20this%20is%20one%20of%20the%20frequently%20asked%20questions.).
 * 2022-07-18T09:35:00Z - Fastly config #311 pushed to create health check API created based on Fastly instructions.
 * 2022-07-18T09:38:38Z - Fastly config #312 pushed improving health check API.
 * 2022-07-18T09:39:00Z - Apache Scoreboard examined on cluebre, showing scoreboard is full.

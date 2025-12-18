@@ -1,5 +1,7 @@
 ---
-title: 2022-07-18 Standard Tile Layer Incident Post-mortem
+title: Post-Mortem - Standard Tile Layer Incident - 18 July 2022
+post_mortem: true
+date: 2022-07-24
 ---
 
 The OpenStreetMap Standard Tile Layer experienced degraded service from 2022-07-18T07:30:00Z to 2022-07-18T10:00:00Z, a total incident of 2 hours and 30 minutes. An apache bug was the cause.

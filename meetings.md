@@ -7,6 +7,9 @@ permalink: /meetings/
 
 Most of the OWG activities are carried out via email and our [public issues tracker](https://github.com/openstreetmap/operations), we also normally have an online video call once every 2 weeks.
 
+Minutes from 2023 onwards are published at https://osmfoundation.org/wiki/Working_Group_Minutes#Operations_meetings.
+They are usually published a few weeks after each meeting.
+
 * [2023-01-26 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2023-01-26)
 * [2023-01-12 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2023-01-12)
 * [2022-04-21 OWG Summary](https://wiki.osmfoundation.org/wiki/Operations/Minutes/2022-04-01_Meeting_about_community.osm.org_and_Discourse) (Meeting about community.osm.org and Discourse)
@@ -60,4 +63,4 @@ Most of the OWG activities are carried out via email and our [public issues trac
 * [2010-11-11 TWG Meeting Summary]({{ site.baseurl }}/files/TWGmeetingsummary2010-11-11.pdf)
 * [2010-08-25 TWG Meeting Summary]({{ site.baseurl }}/files/TWGMeetingSummary2010-08-25.pdf)
 
-Additional minutes may be available on the [OpenStreetMap Foundation Wiki](https://wiki.osmfoundation.org/wiki/Special:PrefixIndex?prefix=Operations%2FMinutes)
+Additional minutes may be available on the [OpenStreetMap Foundation Wiki](https://wiki.osmfoundation.org/wiki/Special:PrefixIndex?prefix=Operations%2FMinutes).

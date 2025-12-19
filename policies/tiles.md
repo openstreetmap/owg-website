@@ -31,7 +31,7 @@ If you cannot meet these requirements, please use an **alternative OSM-derived s
 * Bulk download ("scrape") tiles or offer prefetch features.
 * Send `Cache-Control: no-cache`, `Pragma: no-cache`, or similar no-cache headers by default.
 * Set a restrictive Referrer-Policy that prevents the **HTTP Referer** header being sent.
-* Use the URL `http://tile.openstreetmap.org/{z}/{x}/{y}.png` if your site uses HTTPS. Doing so prevents HTTP referers from being sent.
+* Use the HTTP URL `http://tile.openstreetmap.org/{z}/{x}/{y}.png`.
 * Masquerade as another app's User-Agent, or rely on a library's default User-Agent.
 
 **You should (recommended):**

@@ -34,13 +34,15 @@
           <div class="navbar-header">
             <a class="navbar-brand" href="{{ site.baseurl }}/">OSMF OWG</a>
           </div>
-          <ul class="nav navbar-nav">
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="{{ site.baseurl }}/reports/">Reports</a></li>
-            <li><a href="{{ site.baseurl }}/post-mortems/">Post-mortems</a></li>
-            <li><a href="{{ site.baseurl }}/policies/">Policies</a></li>
-            <li><a href="{{ site.baseurl }}/meetings/">Meetings</a></li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li><a href="{{ site.baseurl }}/">Home</a></li>
+              <li><a href="{{ site.baseurl }}/reports/">Reports</a></li>
+              <li><a href="{{ site.baseurl }}/post-mortems/">Post-mortems</a></li>
+              <li><a href="{{ site.baseurl }}/policies/">Policies</a></li>
+              <li><a href="{{ site.baseurl }}/meetings/">Meetings</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -52,5 +54,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="{{ site.baseurl }}/js/navbar.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@ FROM ghcr.io/ruby/ruby:3.3 AS build
 RUN apt-get update && apt-get install -y \
   g++ \
   make \
+  libssl-dev \
   && rm -rf /var/lib/apt/lists/*
 
 # Create app directory
@@ -13,9 +14,9 @@ WORKDIR /app
 ADD Gemfile* /app/
 
 # Install Gems
-RUN gem install bundler -v 2.6.9 \
-    && bundle config build.nokogiri --use-system-libraries \
-    && bundle config --global jobs $(nproc) \
+RUN gem install bundler -v 4.0.24 \
+    && bundle config set build.nokogiri --use-system-libraries \
+    && bundle config set --globaljobs $(nproc) \
     && bundle install
 
 # Copy Site Files

@@ -150,7 +150,11 @@ This policy may change at any time to reflect project needs and constraints. Com
 
 We may try to contact you (for example, via your `User-Agent` or public contact details) if there is a problem, but this may not always be possible. Access may be **blocked without prior notice**.
 
-## 8. Alternatives: OSM-derived services, vector tiles, and self-hosting
+## 8. Support
+
+We are a small team of mostly volunteers. Do not contact us for integration support for specific map libraries; please consult your library's documentation. We do not review websites or apps in advance. If you are encountering blocked tiles you should reproduce them with curl and compare the headers you are sending against the policy but we cannot do this for you.
+
+## 9. Alternatives: OSM-derived services, vector tiles, and self-hosting
 
 **Hosted tile services based on OSM data**
 
@@ -170,7 +174,7 @@ We may try to contact you (for example, via your `User-Agent` or public contact 
 * They can be hosted by third parties or self-hosted, and **where the provider terms permit** **can be packaged for offline use**.
 * See overview: [https://wiki.openstreetmap.org/wiki/Vector_tiles](https://wiki.openstreetmap.org/wiki/Vector_tiles)
 
-## 9. Scope
+## 10. Scope
 
 This policy applies to the **Standard** ("OpenStreetMap Carto") **raster** tiles served by **`tile.openstreetmap.org`** as part of the OpenStreetMap project.
 

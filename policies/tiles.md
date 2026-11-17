@@ -71,7 +71,7 @@ Other subdomains or hostnames may be slower or withdrawn without notice. We cann
   Browsers will use the browser's default `User-Agent`.
 * Do **not** use a library default `User-Agent`, and never impersonate another app or a browser.
 * If your platform automatically sets an **`X-Requested-With`** header with an app ID, that is acceptable, but a proper `User-Agent` is still recommended.
-* **Referer (web only):** Browsers are expected to send a valid `Referer` header. Native apps usually do not have a referer, this is ok.
+* **Referer:** Websites must send an accurate `Referer` header. Native apps should normally omit it, but may use their own website URL. Never use `www.openstreetmap.org` or another website you do not represent.
 * **Referrer-Policy (web only):** Do not set a restrictive Referrer-Policy that prevents the `Referer` header being sent on requests to tile.openstreetmap.org.
 
 ### 3.2 Caching
@@ -103,6 +103,7 @@ Many HTTP clients and Software Development Kits (SDK) use a **generic User-Agent
 * Use the library's generic default `User-Agent`.
 * Hide behind a generic proxy `User-Agent` (e.g. `nginx`, `Varnish`, `CDN-XYZ`).
 * Strip `Referer` on web traffic or tunnel all clients behind a single, anonymous identity.
+* Set a custom `Referer` of `www.openstreetmap.org` or any other website you do not represent.
 
 **Enforcement:** Traffic using generic defaults, referer-stripping, or spoofed identities may be **blocked without notice**. We prioritise identifiable and contactable operators to keep the service reliable for everyone.
 
@@ -152,7 +153,13 @@ We may try to contact you (for example, via your `User-Agent` or public contact 
 
 ## 8. Support
 
-We are a small team of mostly volunteers. Do not contact us for integration support for specific map libraries; please consult your library's documentation. We do not review websites or apps in advance. If you are encountering blocked tiles you should reproduce them with curl and compare the headers you are sending against the policy but we cannot do this for you.
+We are a small team of mostly volunteers. Do not contact us for integration support for specific map libraries; please consult your library's documentation. We do not review websites or apps in advance and cannot troubleshoot individual integrations for you.
+
+If your tile requests are blocked, use your browser's developer tools or your app's debugging tools to inspect the request headers. Confirm that they accurately identify your website or app and comply with this policy.
+
+If the blocked website does not display the required OpenStreetMap attribution, add the attribution and check whether the website is listed in the [tile attribution issues list](https://github.com/openstreetmap/tile-attribution/issues). If you find an issue for your website, comment there to confirm that the attribution has been added and request that the block be reviewed.
+
+If the headers and attribution appear correct, check the published [tile usage logs](https://planet.openstreetmap.org/tile_logs/) for the days before the block, using the hosts file for websites or the apps file for applications. We very rarely block correctly identified websites or apps, except where exceptionally heavy usage places a strain on our resources. If yours was not among the highest-volume users, incorrect or misleading request headers are by far the most likely cause of the block.
 
 ## 9. Alternatives: OSM-derived services, vector tiles, and self-hosting
 
